@@ -21,14 +21,14 @@
         <span>월소담</span>
 
     <ul>    
-        <li>소개</li>
-        <li><a href="{% url 'subscribe' %}">구독</a></li>
-        <li>제품</li>
-        <li>후기</li>
-        <li>Q&A</li>
+        <li><a id="introduce" href="{% url 'introduce' %}">소개</a></li>
+        <li><a id="subscribe" href="{% url 'subscribe' %}">구독</a></li>
+        <li><a id="product" href="{% url 'product' %}">제품</a></li>
+        <li><a id="review" href="{% url 'review' %}">후기</a></li>
+        <li><a id="QA" href="{% url 'QA' %}">Q&A</a></li>
     </ul>
 
-    <a href="#">로그인</a>
+    <a id="nav_login" href="#">로그인</a>
 </nav>
 <!-- end navvar -->
 
@@ -36,5 +36,36 @@
 {% block content %}
 {% endblock content %}
 <!-- end content -->
+
+<script>
+    let introduce = document.getElementById("introduce");
+    let subscribe = document.getElementById("subscribe");
+    let product = document.getElementById("product");
+    let review = document.getElementById("review");
+    let QA = document.getElementById("QA");
+
+    let link = document.location.pathname;
+
+    switch(link){
+        case '/introduce/':
+            introduce.style.color="#DA291C"
+            break;
+        case '/subscribe/':
+            subscribe.style.color="#DA291C"
+            break;
+        case '/product/':
+            product.style.color="#DA291C"
+            break;
+        case '/review/':
+            review.style.color="#DA291C"
+            break;
+        case '/QA/':
+            QA.style.color="#DA291C"
+            break;
+    }
+
+</script>
+
 </body>
 </html>
+

@@ -24,4 +24,8 @@ urlpatterns = [
     path('subscribe2/',views.subscribe2, name='subscribe2'),
     path('subscribe3/',views.subscribe3, name='subscribe3'),
     path('subscribe4/',views.subscribe4, name='subscribe4'),
+    path('introduce/',views.introduce, name='introduce'),
+    path('QA/',views.QA, name='QA'),
+    path('review/',views.review, name='review'),
+    path('product/',views.review, name='product'),
 ]
