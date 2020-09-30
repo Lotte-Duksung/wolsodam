@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>월소담 : 매달마다 적은 양으로 즐기는 롯데</title>
+    <link rel='stylesheet' href='{% static "css/nav.css" %}'/>
+</head>
+
+<!-- favicon.ico 404 (Not Found) -->
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+<body>
+<!-- navvar -->
+<nav id="navbar">
+        <img id="logo_img" src='{% static "img/lotte_logo.png" %}' alt="logo">
+        <span>월소담</span>
+
+    <ul>    
+        <li>소개</li>
+        <li>구독</li>
+        <li>제품</li>
+        <li>후기</li>
+        <li>Q&A</li>
+    </ul>
+    
+
+    <a href="#">로그인</a>
+</nav>
+<!-- end navvar -->
+
+<!-- content -->
+{% block content %}
+{% endblock content %}
+<!-- end content -->
+</body>
+</html>
