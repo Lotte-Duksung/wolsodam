@@ -20,4 +20,8 @@ from wsd_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.main, name='main'),
+    path('subscribe/',views.subscribe, name='subscribe'),
+    path('subscribe2/',views.subscribe2, name='subscribe2'),
+    path('subscribe3/',views.subscribe3, name='subscribe3'),
+    path('subscribe4/',views.subscribe4, name='subscribe4'),
 ]

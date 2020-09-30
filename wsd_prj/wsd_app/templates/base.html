@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>월소담 : 매달마다 적은 양으로 즐기는 롯데</title>
+    {% block head %}
+    {% endblock head %}
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='{% static "css/nav.css" %}'/>
 </head>
 
@@ -19,7 +22,7 @@
 
     <ul>    
         <li>소개</li>
-        <li>구독</li>
+        <li><a href="{% url 'subscribe' %}">구독</a></li>
         <li>제품</li>
         <li>후기</li>
         <li>Q&A</li>
