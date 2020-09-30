@@ -1,0 +1,23 @@
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 8%;
+}
+
+#logo_img{
+    width: 40px;
+    height: 41px;
+    margin-right: 10px;
+}
+
+#navbar ul li{
+    display : inline;
+    list-style-type: none;
+    padding : 0px 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    margin-left:auto;
+}
