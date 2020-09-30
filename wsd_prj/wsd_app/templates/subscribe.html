@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구독페이지</title>
+</head>
+<body>
+{% block content %}
+<div class="sub-page">
+    <div class = "sub-wrapper">
+        <div class = "sub-top-menu-wrapper">
+            <div id="diamond">1</div>
+            <div id="diamond">2</div>
+            <div id="diamond">3</div>
+            <div id="diamond">4</div>
+        </div>
+        <div class="sub-title">
+            취향조사
+        </div>
+        <div class="sub-page1">
+            <div class="sub-page1-content">
+            </div>
+        </div>
+        <div class="sub-bottom">
+            <div class="next"><a href="{% url 'subscribe2' %}">다음 단계</a></div>
+        </div>
+    </div>
+</div>
+{% endblock content %}  
+</body>
+</html>
