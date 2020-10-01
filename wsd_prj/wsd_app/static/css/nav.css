@@ -5,12 +5,16 @@ html {
     overflow-x: hidden;
     margin-right: calc(-1 * (100vw - 100%));
 }
+
+/*감사합니다*/
 body {
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
     color : black;
     margin: 0;
 }
+
+/*navbar 한줄로 나란히*/
 #navbar{
     display: flex;
     align-items: center;
@@ -18,21 +22,37 @@ body {
     padding: 10px 8%;
 }
 
+/*nav바 이미지*/
 #logo_img{
     width: 40px;
     height: 41px;
     margin-right: 10px;
 }
 
+/* nav바 소개, 구독, 제품, 후기 Q&A */
 #navbar ul li{
     display : inline;
     list-style-type: none;
-    padding : 0px 20px;
+    padding : 0px 23px;
+    font-weight: bold;
 }
 
-#navbar a {
+
+/*nav바 로그인*/
+#nav_login {
     text-decoration: none;
     margin-left:auto;
+    font-size: small;
+    color : #707070
+}
+
+li a{
+    text-decoration: none;
+    color : #707070
+}
+
+li a:hover{
+    color : #DA291C;
 }
 
 /*구독*/
