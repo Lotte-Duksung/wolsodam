@@ -1,5 +1,40 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-<h1>메인 페이지</h1>
-{% endblock content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>월소담</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+<div class="main-img"> <!--메인 이미지&구독버튼-->
+    <div class="main-img-text">
+        <p>버튼넣기 가능합니다~~</p>
+        <a class="button subscribe-btn" href="{% url 'subscribe' %}">구독하기</a>
+    </div>
+</div>
+
+<div class="main-content-box">
+    <div class="main-contents">
+        <div>
+            <h2>서비스 네임</h2>
+            <div class="item">
+                <div>
+                    <h2>대충 슬로건</h2>
+                    <p>대충 서비스에 관련된 이야기, 서비스의 목적, 취지, 의도, 효과, 구조 등등. Overview 내용을 간략히 적거나 흥미를 유발하는 문구 들어갈 자리. 한 3~5줄 되지 않을까. 이부분은 귀찮으면 다 이미지해서 박자.</p>
+                </div>
+                <div>
+                    <img id="servicename" src="../static/img/lotte_logo.png" />
+                </div>
+            </div><!-- END item -->
+        </div>
+    </div><!-- END main-contents -->
+</div><!-- END main-content-box -->
+
+{% endblock content %}  
+</body>
+</html>
