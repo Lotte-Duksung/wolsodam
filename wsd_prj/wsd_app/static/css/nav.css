@@ -27,41 +27,59 @@ body {
     width: 40px;
     height: 41px;
     margin-right: 10px;
+    margin-top:10px;
+}
+
+#logo_text{
+    text-decoration: none;
+    font-weight:bold;
+    color:#DA291C;
+    font-size:23px;
 }
 
 /* nav바 소개, 구독, 제품, 후기 Q&A */
 #navbar ul li{
     display : inline;
     list-style-type: none;
-    padding : 23px 80px;
+    /*padding : 23px 80px;*/
+    padding: 0px 37px;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 
 /*nav바 로그인*/
-#nav_login{
+#nav_log{
     text-decoration: none;
     margin-left:auto;
-    font-size: small;
-    color : #707070
+    font-weight: bold;
+    color : #707070;
+    font-size: 20px;
+}
+
+#nav_log:hover{
+    color : #DA291C;
 }
 
 /*nav바 로그아웃*/
 #nav_logout{
     text-decoration: none;
-    margin-left:auto;
-    font-size: small;
+    margin-left:37px;
+    font-size: 20px;
+    font-weight: bold;
     color : #707070
+}
+#nav_logout:hover{
+    color : #DA291C;
 }
 
 /*nav바 마이페이지*/
-#nav_mypage{
+/*#nav_mypage{
     text-decoration: none;
     margin-left:auto;
     font-size: small;
     color : #707070
-}
+}*/
 
 li a{
     text-decoration: none;
