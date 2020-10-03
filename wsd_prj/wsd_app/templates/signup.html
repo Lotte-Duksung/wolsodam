@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+</head>
+<body>
+{% block content %}
+<br>
+<br>
+<div class="text-center">
+    <h2>회원가입</h2>
+        <div class = "signup-entry">
+            <form method="POST" action="{% url 'signup' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    이름 <br>
+                    <input name="first_name" type="first_name" required="true" placeholder="이름 입력">
+                </div>
+                <br>
+                <div class="form-group">
+                    성 <br>
+                    <input name="last_name" type="last_name" required="true" placeholder="성 입력">
+                </div>
+                <br>
+                <div class = "form-group">
+                    아이디 <br>
+                    <input name="username" type="text" required="true" placeholder="아이디 입력">
+                </div>
+                <br>
+                <div class="form-group">
+                    비밀번호 <br>
+                    <input name="password1" type="password" required="true" placeholder="8~15자리 영문+숫자 조합" pattern="^(?=.*[a-z])(?=.*[0-9]).{8,15}$">
+                </div>
+                <br>
+                <div class="form-group">
+                    비밀번호 확인 <br>
+                    <input name="password2" type="password" required="true" placeholder="8~15자리 영문+숫자 조합" pattern="^(?=.*[a-z])(?=.*[0-9]).{8,15}$">
+                </div>
+                <br>
+                <div class="form-group">
+                    이메일 <br>
+                    <input name="email" type="email" required="true" placeholder="이메일 입력">
+                </div>
+                <br>
+                <div class="form-group">
+                    전화번호 <br>
+                    <input name="phone" type="number" required="true" placeholder="-없이 숫자만 적어주세요">
+                </div>
+                <br>
+                <div class="form-group">
+                    생일 <br>
+                    <input name="birth_date" type="date">
+                </div>
+                <br>
+                <div class="form-group">
+                    성별 <br>
+                    <input type="text" name="gender" placeholder="여성 or 남성">
+                </div>
+                <div class= "form-group">
+                    <br>
+                    <input type="submit" value="가입완료">
+                </div>
+            </form>
+        </div>
+</div>
+{% endblock content %}  
+</body>
+</html>
