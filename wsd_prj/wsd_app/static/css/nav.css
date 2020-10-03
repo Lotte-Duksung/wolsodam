@@ -33,8 +33,9 @@ body {
 #navbar ul li{
     display : inline;
     list-style-type: none;
-    padding : 0px 23px;
+    padding : 23px 80px;
     font-weight: bold;
+    font-size: 24px;
 }
 
 
@@ -79,6 +80,7 @@ li a:hover{
     text-align: center;
     top: 160px;
     height: 91px;
+    margin-top: 80px;
 }
 #diamond{
 
@@ -162,6 +164,220 @@ li a:hover{
     line-height: 700px;
 }
 
+/*구독 페이지 3*/
+.sub-page-img{
+    top: 402px;
+    left: 140px;
+    width: 1640px;
+    height: 800px;
+    background-color: #8F9191;
+    margin:40px 140px 160px 140px;
+    border-radius: 15px;
+    color: #ffff;
+    text-align: center;
+    line-height: 800px;
+}
+.postbox-wrapper{
+    padding-bottom: 80px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+.post-menu {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-menu a{
+    font-size:24px;
+    font-weight: bold;
+    width: 350px;
+    height: 46px;
+    box-shadow: 0px 5px #8F9191;
+    color:#8F9191;
+    text-decoration-line: none;
+}
+
+.post-menu #comp{
+    box-shadow: 0px 5px #DA291C;
+    color:#DA291C;
+}
+.post-menu #intro{
+    box-shadow: 0px 5px #DA291C;
+    color:#DA291C;
+}
+.post-menu #price{
+    box-shadow: 0px 5px #DA291C;
+    color:#DA291C;
+}
+.post-menu #alert{
+    box-shadow: 0px 5px #DA291C;
+    color:#DA291C;
+}
+
+.post-box{
+    border: 1px solid #00000040;
+    box-shadow: 0px 5px 10px #00000040;
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+.post-box1{
+    text-align: left;
+    margin : 80px 138px;
+}
+
+/*구독페이지3- 키트구성*/
+#kit-name{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.post-sub-box{
+    text-align: justify;
+}
+
+.item-box{
+    width: 674px;
+    height: 228px;
+    display: inline-block;
+}
+.item-box #new{
+    color: #DA291C;
+}
+#item-name{
+    font-size: 36px;
+    font-weight: bold;
+}
+#item-detail{
+    font-size:20px;
+}
+/*구독페이지3 - 신제품 소개*/
+.new-item-box{
+    justify-content: space-between;
+    display: flex;
+}
+.item-img{
+    width: 400px;
+    height: 400px;
+    background-color: #F8F8F8;
+}
+
+.item-introduce{
+    width: 950px;
+    height: 400px;
+    background-color: #8F9191;
+}
+
+.item-detail{
+    height: 500px;
+    background-color: #8F9191;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+#red-line{
+    border: 1px solid red;
+    margin-top: 160px;
+    margin-bottom: 54px;
+}
+.ordinary-box{
+    text-align: center;
+}
+.ordinary-item{
+    display: center;
+}
+.ordinary-item-detail{
+    margin :80px 67px 80px 67px;
+    display:inline-block;
+}
+
+#ordinary-item-img{
+    border-radius:100px;
+    width: 200px;
+    height: 200px;
+    background-color: #F8F8F8;
+    margin-left: 27px;
+    margin-right: 27px;
+}
+
+#ordinary-item-name{
+    width: 254px;
+    height: 24px; 
+    background-color: #8F9191; 
+    border: 1px solid #707070;
+    margin-top:32px;
+    margin-bottom: 40px;
+}
+
+#ordinary-item-click{
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #DA291C; 
+    margin-left: 27px;
+    margin-right: 27px;
+}
+
+#ordinary-item-click a{
+    color: white;
+    line-height: 60px;
+    text-align: center;
+}
+
+#silver-font{
+    color: #54585A;
+    font-size:24px;
+}
+/*구독페이지 3 - 가격*/
+.buy-kit{
+    text-align: center;
+}
+.buy-kit-box{
+    display:inline-block;
+}
+#buy-kit-img{
+    width: 674px;
+    height: 400px;
+    background-color: #F8F8F8;
+    display: inline-block;
+}
+/*구독페이지 3 - 주의사항 : 새로운 클래스 없음(아직은)*/
+/*구독페이지4*/
+.delivery-page{
+    margin:0 auto;
+}
+.delivery-info{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#twentyfour-bold{
+    font-size:24px;
+    font-weight: bold;
+}
+#twenty-bold{
+    font-size: 20px;
+    font-weight: bold;
+}
+.delivery-box{
+    width: 536px;
+}
+#input{
+    width: 536px;
+    height: 60px;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    border:0px solid;
+    opacity: 1;
+    font: normal normal normal 20px/65px Noto Sans KR;
+    color: #8F9191;
+}
+.delivery-box2{
+    justify-content: space-between;
+    display: flex;
+}
 
 /* 로그인-회원가입-가입완료 페이지 */
 .text-center{
