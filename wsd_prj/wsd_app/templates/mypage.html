@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<br>
+<div class='text-center'>
+    <h2>마이페이지</h2>
+    {% if request.user.is_authenticated %}  <!-- 만약 로그인이 되어있는 상태이면-->
+                <h1> {{ user.username }}님의 마이페이지입니다</h1>
+        {% endif%}
+</div>
+{% endblock content %}

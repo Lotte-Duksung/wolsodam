@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+</head>
+<body>
+{% block content %}
+<br>
+<br>
+<div class="text-center">
+    <h2>로그인</h2>
+        <div class = "login-entry">
+            <form method="POST" action="{%url 'login' %}">
+                {% csrf_token %}
+                <div class = "form-group">
+                    <input name="username" type="text" value="" placeholder="아이디 입력">
+                </div>
+                <div class = "form-group">
+                    <input name="password" type="password" value="" placeholder="8~15자리 영문+숫자 조합">
+                </div>
+                <div class="form-group">
+                    <a href="{% url 'signup' %}">
+                        <button type="button" id='btn_signup'>
+                            회원가입
+                        </button>
+                    </a>
+                </div>
+                <br>
+                <div class= "form-group">
+                    <input type="submit" value="로그인">
+                </div>
+            </form>
+        </div>
+</div>
+{% endblock content %}  
+</body>
+</html>

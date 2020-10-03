@@ -40,7 +40,23 @@ body {
 
 
 /*nav바 로그인*/
-#nav_login {
+#nav_login{
+    text-decoration: none;
+    margin-left:auto;
+    font-size: small;
+    color : #707070
+}
+
+/*nav바 로그아웃*/
+#nav_logout{
+    text-decoration: none;
+    margin-left:auto;
+    font-size: small;
+    color : #707070
+}
+
+/*nav바 마이페이지*/
+#nav_mypage{
     text-decoration: none;
     margin-left:auto;
     font-size: small;
@@ -361,4 +377,9 @@ li a:hover{
 .delivery-box2{
     justify-content: space-between;
     display: flex;
+}
+
+/* 로그인-회원가입-가입완료 페이지 */
+.text-center{
+    text-align: center;
 }

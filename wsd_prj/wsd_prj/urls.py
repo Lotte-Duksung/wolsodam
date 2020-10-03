@@ -28,4 +28,10 @@ urlpatterns = [
     path('QA/',views.QA, name='QA'),
     path('review/',views.review, name='review'),
     path('product/',views.review, name='product'),
+    path('login/', views.login, name='login'),
+    path('signup/', views.signup, name='signup'),
+    path('logout/', views.logout, name='logout'),
+    path('mypage/', views.mypage, name='mypage'),
+    path('signup_complete/', views.signup_complete, name="signup_complete"),
+
 ]
