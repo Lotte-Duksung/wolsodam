@@ -29,7 +29,7 @@
     </ul>
 
     {% if request.user.is_authenticated %}  <!-- 만약 로그인이 되어있는 상태이면-->
-
+        <!-- 여기 마이페이지하고 로그아웃이 서로 떨어지는 것 해결 부탁드려요...-->
         <a id="nav_mypage" href="{% url 'mypage' %}">My 페이지</a>
         <a id="nav_logout" href="javascript:{document.getElementById('logout').submit()}">
             <h1>로그아웃</h1>
