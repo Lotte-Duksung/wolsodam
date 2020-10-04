@@ -17,8 +17,8 @@
 <body>
 <!-- navvar -->
 <nav id="navbar">
-        <a href="{% url 'main' %}"> <img id="logo_img" src='{% static "img/lotte_logo.png" %}' alt="logo"></a>
-        <span>월소담</span>
+        <a href="{% url 'main' %}"><img id="logo_img" src='{% static "img/lotte_logo.png" %}' alt="logo"></a>
+        <a id="logo_text" href="{% url 'main' %}"><span>월소담</span></a>
 
     <ul>    
         <li><a id="introduce" href="{% url 'introduce' %}">소개</a></li>
@@ -29,17 +29,17 @@
     </ul>
 
     {% if request.user.is_authenticated %}  <!-- 만약 로그인이 되어있는 상태이면-->
-        <!-- 여기 마이페이지하고 로그아웃이 서로 떨어지는 것 해결 부탁드려요...-->
-        <a id="nav_mypage" href="{% url 'mypage' %}">My 페이지</a>
+
+        <a id="nav_log" href="{% url 'mypage' %}">My 페이지</a>
         <a id="nav_logout" href="javascript:{document.getElementById('logout').submit()}">
-            <h1>로그아웃</h1>
+            로그아웃
           </a>
               <form id="logout" method="POST" action="{% url 'logout' %}">
                   {% csrf_token %} <input type="hidden" />
               </form>
 
     {% else %}  <!-- 로그인이 되어있지 않다면 -->
-        <a id="nav_login" href="{% url 'login' %}">로그인</a>
+        <a id="nav_log" href="{% url 'login' %}">로그인</a>
     {% endif %}
 
 </nav>
