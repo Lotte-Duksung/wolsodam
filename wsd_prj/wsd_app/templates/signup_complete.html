@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<br>
+<div class="text-center">
+    <h2>가입 완료</h2>
+
+    {% if request.user.is_authenticated %}  <!-- 만약 로그인이 되어있는 상태이면-->
+            <h1> {{ user.username }}님,</h1>
+            <h1> 롯데 월소담 가입을 축하합니다! </h1>
+    {% endif%}
+
+    <button id="go_main" type="button" onclick="location.href='/'">홈화면으로</button>
+    <button id="go_subscribe" type="button" onclick="location.href={% url 'subscribe'%}">구독하러 가기</button>
+</div>
+{% endblock content %}
