@@ -1,7 +1,107 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-<h1>메인 페이지</h1>
 
+<!DOCTYPE html>
+<html lang="en">
 
-{% endblock content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>월소담</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+<div class="main-img"> <!--메인 이미지&구독버튼-->
+    <div class="main-img-text">
+        <p>배너(이 달의 키트 사진 및 홍보 문구)</p>
+        <a class="button subscribe-btn" href="{% url 'subscribe' %}">구독하기</a>
+    </div>
+</div>
+
+<div class="main-contents-box">
+    <div class="main-contents">
+        
+        <div class="box">
+            <p class="sub-title">서비스 네임</h2>
+            <div class="item">
+                <div class="text-field">
+                    <p class="red title">대충 슬로건</p>
+                    <p class="gray line">대충 서비스에 관련된 이야기, 서비스의 목적, 취지, 의도, 효과, 구조 등등. Overview 내용을 간략히 적거나 흥미를 유발하는 문구 들어갈 자리. 한 3~5줄 되지 않을까. 이부분은 귀찮으면 다 이미지해서 박자.</p>
+                </div>
+                <img id="servicename" src="../static/img/lotte_logo.png" />
+            </div>
+        </div><!-- END 서비스 네임 box -->
+        
+        <div class="box">
+            <p class="sub-title">이 달의 키트</p>
+            <div class="item">
+                <img id="monthkit" src="../static/img/lotte_logo.png" />
+                <div class="text-field">
+                    <p class="title">키트네임(ex 비건)</p>
+                    <div class="gray">
+                        <p>①키트 구성품 들어가는 자리</p>
+                        <p>1️⃣키트 구성품 들어가는 자리</p>
+                        <p>키트 구성품 들어가는 자리</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END 이 달의 키트 box -->
+
+        <div class="box">
+            <p class="sub-title">배송 일자</p>
+            <div class="item">
+                <div class="text-field">
+                    <p class="title">매월 20일 배송(예시)</p>
+                    <p class="gray">롯데 키트는 매월 15일, 20일에 배송합니다</p>
+                    <p class="gray">이 달의 키트를 받고 싶다면, 15일 전에 결제, 구독해주세요!</p>
+                </div>
+                <img id="delivery" src="../static/img/lotte_logo.png" />
+            </div>
+        </div><!-- END 배송 box -->
+
+        <div class="btn-box">
+            <a class="button hover-btn" href="{% url 'subscribe' %}">구독하기</a>
+            <div class="box">
+                <p class="refe">※주의사항※</p>
+                <p class="refe">구독 시 주의사항 또는 관련 문구 적기</p>
+                <p class="refe">소비자 문의 번호 1587916-1152</p>
+            </div>
+        </div><!-- END 버튼 box -->
+
+    </div><!-- END main-contents -->
+</div><!-- END main-content-box / 회색 배경 끝-->
+
+<div class="main-review">
+    <span class="sub-title best-review">BEST 후기</span>
+    <div class="review">
+        <div class="review-box">
+            <img id="review" src="../static/img/lotte_logo.png" />
+            <p class="bold gray">id123456</p>
+            <p>최고의 후기 뫄모마뫄뫄마</p>
+            <p>이것도 max-width정해야하는데</p>
+            <p>왜 시험기간이랑 겹친걸까ㅏㅏㅏ</p>
+        </div>
+
+        <div class="review-box">
+            <img id="review" src="../static/img/lotte_logo.png" />
+            <p class="bold gray">id123456</p>
+            <p>최고의 후기 뫄모마뫄뫄마</p>
+            <p>이것도 max-width정해야하는데</p>
+            <p>왜 시험기간이랑 겹친걸까ㅏㅏㅏ</p>
+        </div>
+
+        <div class="review-box">
+            <img id="review" src="../static/img/lotte_logo.png" />
+            <p class="bold gray">id123456</p>
+            <p>최고의 후기 뫄모마뫄뫄마</p>
+            <p>이것도 max-width정해야하는데</p>
+            <p>왜 시험기간이랑 겹친걸까ㅏㅏㅏ</p>
+        </div>
+
+    </div><!-- END item -->
+</div><!--END main-review-->
+
+{% endblock content %}  
+</body>
+</html>
