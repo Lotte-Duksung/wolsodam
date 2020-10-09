@@ -10,165 +10,78 @@
 <body>
 {% block content %}
 <div class="sub-page">
-    <header class = "sub-wrapper">
-        <div class = "sub-top-menu-wrapper">
+    <div class = "sub-wrapper">
+        <header class = "sub-top-menu-wrapper">
             <div id="diamond">1</div>
             <div id="diamond">2</div>
             <div id="diamond">3</div>
             <div id="diamond">4</div>
-        </div>
+        </header>
         <div class="sub-title">
-            키트 설명
+            결제 진행
         </div>
-        <div class="sub-page3">
-            <div class="sub-page-img">키트 목업 또는 사진</div>
-            <div class = "postbox-wrapper">
-                <div>  
-                    <div class="post-menu">
-                        <a id="comp" href="#comp">키트구성</a>
-                        <a href="#intro">신제품소개</a>
-                        <a href="#price">가격</a>
-                        <a href="#alert">주의사항</a>
-                    </div>
-                    <div class="post-box">
-                        <div class="post-box1">
-                            <h1 id="kit-name">키트네임(ex 비건 KIT)</h1>
-                            <div class="post-sub-box">
-                                <div class="item-box">
-                                    <p id="item-name">① 이름 <span id="new">　NEW!</span></p>
-                                    <p id="item-detail">-제품군:</p>
-                                    <p id="item-detail">-제품 중량:</p>
-                                    <p id="item-detail">-제품 특징:</p>
-                                </div>
-                                <div class="item-box">
-                                    <p id="item-name">② 이름 <span id="new">　NEW!</span></p>
-                                    <p id="item-detail">-제품군:</p>
-                                    <p id="item-detail">-제품 중량:</p>
-                                    <p id="item-detail">-제품 특징:</p>
-                                </div>
-                                <div class="item-box">
-                                    <p id="item-name">③ 이름</p>
-                                    <p id="item-detail">-제품군:</p>
-                                    <p id="item-detail">-제품 중량:</p>
-                                    <p id="item-detail">-제품 특징:</p>
-                                </div>
-                                <div class="item-box">
-                                    <p id="item-name">④ 이름</p>
-                                    <p id="item-detail">-제품군:</p>
-                                    <p id="item-detail">-제품 중량:</p>
-                                    <p id="item-detail">-제품 특징:</p>
-                                </div>
-                                <div class="item-box">
-                                    <p id="item-name">⑤ 이름</p>
-                                    <p id="item-detail">-제품군:</p>
-                                    <p id="item-detail">-제품 중량:</p>
-                                    <p id="item-detail">-제품 특징:</p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
+        <div class="sub-page1">
+            <div class="delivery-page">
+                <div class="delivery-info">
+                    <p id="twentyfour-bold">수량 선택</p>
+                    <hr id="delivery-red-line">
                 </div>
-                <div>
-                    <div class="post-menu">
-                        <a href="#comp">키트구성</a>
-                        <a id="intro" href="#intro">신제품소개</a>
-                        <a href="#price">가격</a>
-                        <a href="#alert">주의사항</a>
-                    </div>
-                    <div class="post-box">
-                        <div class="post-box1">
-                            <h1 id="kit-name">신제품 이름</h1>
-                            <div>
-                                <div class="new-item-box">
-                                    <div class="item-img"></div>
-                                    <div class="item-introduce"></div>
-                                </div>
-                                <div class="item-detail"></div>
-                            </div>
-                            <h1 id="kit-name">신제품 이름2</h1>
-                            <div>
-                                <div class="new-item-box">
-                                    <div class="item-img"></div>
-                                    <div class="item-introduce"></div>
-                                </div>
-                                <div class="item-detail"></div>
-                            </div>
-                            <hr id="red-line">
-                            <div>
-                                <div class="ordinary-box">
-                                    <p id="item-name">기존 제품의 정보가 궁금하다면?</p> 
-                                    <div class="ordinary-item">
-                                        <div class="ordinary-item-detail">
-                                            <div id="ordinary-item-img"></div>
-                                            <div id="ordinary-item-name"></div>
-                                            <div id="ordinary-item-click"><a href="#">상세보기</a></div>
-                                        </div>
-                            
-                                        <div class="ordinary-item-detail">
-                                            <div id="ordinary-item-img"></div>
-                                            <div id="ordinary-item-name"></div>
-                                            <div id="ordinary-item-click"><a href="#">상세보기</a></div>
-                                        </div>
-                                    
-                                        <div class="ordinary-item-detail">
-                                            <div id="ordinary-item-img"></div>
-                                            <div id="ordinary-item-name"></div>
-                                            <div id="ordinary-item-click"><a href="#">상세보기</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class = "delivery-box2">
+                    <p id="twenty-bold">1 키트<input type="radio" checked=""></input></p>
+                    <p id="twenty-bold">2 키트<input type="radio" checked=""></input></p>
+                    <input type="text" id="input-delivery" placeholder="3개 이상 입력"></input>
+                    <p id="twenty-bold">키트<input type="radio" checked=""></input></p>
                 </div>
-                <div>
-                    <div class="post-menu">
-                        <a href="#comp">키트구성</a>
-                        <a href="#intro">신제품소개</a>
-                        <a id="price" href="#price">가격</a>
-                        <a href="#alert">주의사항</a>
-                    </div>
-                    <div class="post-box">
-                        <div class="post-box1">
-                            <h1 id="kit-name">정기 결제</h1>
-                            <p id="silver-font">정기 결제는 매월 00에 자동 청구 됩니다.(배송비 포함)</p>
-                            <div class="buy-kit"> 
-                                <div class = "buy-kit-box">
-                                    <div id="buy-kit-img"></div>
-                                    <h1 id="kit-name">1 키트 | 월 0,000원</h1>
-                                </div>
-                                <div class = "buy-kit-box">
-                                    <div id="buy-kit-img"></div>
-                                    <h1 id="kit-name">2 키트 | 월 0,000원</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="delivery-info">
+                    <p id="twentyfour-bold">배송지 정보</p>
+                    <hr id="delivery-red-line">
                 </div>
-                <div>
-                    <div class="post-menu">
-                        <a href="#comp">키트구성</a>
-                        <a href="#intro">신제품소개</a>
-                        <a href="#price">가격</a>
-                        <a id ="alert" href="#alert">주의사항</a>
-                    </div>
-                    <div class="post-box">
-                        <div class="post-box1">
-                            <h1 id="kit-name">주의사항</h1>
-                            <p id="silver-font">① 주의사항 자리</p>
-                            <p id="silver-font">② 주의사항 자리</p>
-                            <p id="silver-font">③ 주의사항 자리</p>
-                            <p id="silver-font">④ 주의사항 자리</p>
-                            <p id="silver-font">⑤ 주의사항 자리</p>
-                        </div>
-                    </div>
+                <div class = "delivery-box">
+                    <p id="twenty-bold">받는 이</p>
+                    <input type="text" id="input" placeholder="이름 입력"></input><br><br>
+                    <p id="twenty-bold">전화번호</p>
+                    <input type="text" id="input" placeholder="000-0000-0000"></input><br><br>
+                    <p id="twenty-bold">우편번호</p>
+                    <input type="text" id="input-post" placeholder="우편번호 검색"></input><button id="button-post">검색</button><br><br>
+                    <p id="twenty-bold">배송지</p>
+                    <input type="text" id="input" placeholder="배송지"></input><br><br>
+                    <input type="text" id="input" placeholder="상세 정보"></input><br><br>
+                    <p id="twenty-bold">배송 메모</p>
+                    <input type="text" id="input" placeholder="부재 시 경비실에 놔두세요."></input><br><br>
                 </div>
+                <div class="delivery-info">
+                    <p id="twentyfour-bold">결제 수단</p>
+                    <hr id="delivery-red-line">
+                </div>
+                <div class = "delivery-box2">
+                    <label id="twenty-bold">휴대폰<input type="radio" checked=""></input></label>
+                    <label id="twenty-bold">계좌이체<input type="radio" checked=""></input></label>
+                    <label id="twenty-bold">무통장입금<input type="radio" checked=""></input></label>
+                    <label id="twenty-bold">신용카드<input type="radio" checked=""></input></label>
+                </div>
+                <div class="delivery-box2">
+                    <p class="card" id="twenty-bold">신용카드</p>
+                    <p class="card" id="twenty-bold">할부</p>
+                </div>
+                <div class="delivery-box2">
+                    <select id="card-sort">
+                        <option selected>하나</option>
+                        <option>신한</option>
+                    </select>
+                    <select id="installment">
+                        <option selected>일시불</option>
+                        <option>6개월</option>
+                    </select>
+                </div>
+                <hr id="red-line">
+                <div class="sub-title">결제 금액 : 총 00,000원</div>
+                <p style="font-size:16px;color:#54585A;text-align:center;"><input type="checkbox" id="checkbox">위 상품의 구매 조건 확인 및 결제 진행에 동의합니다.</input></p>
             </div>
         </div>
         <div class="sub-bottom">
-            <div class="next"><a href="{% url 'subscribe4' %}">다음 단계</a></div>
+            <div class="next"><a href="{% url 'subscribe4' %}">결제하기</a></div>
         </div>
-    </header>
+    </div>
 </div>
 {% endblock content %}  
 </body>
