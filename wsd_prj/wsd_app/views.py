@@ -56,8 +56,7 @@ def signup(requests):
             )
             phone = requests.POST["phone"]  
             birth_date = requests.POST["birth_date"]
-            gender = requests.POST["gender"]
-            profile = Profile(user=user, phone=phone, birth_date = birth_date, gender=gender)   #Profile 생성
+            profile = Profile(user=user, phone=phone, birth_date = birth_date)   #Profile 생성
             profile.save()  #Profile 저장
             auth.login(requests, user)   # 그 계정에 로그인을 하라는 요청을 다시 보냄
         return redirect('signup_complete')     # 메인으로 사용자가 갈 수 있게 리턴함
