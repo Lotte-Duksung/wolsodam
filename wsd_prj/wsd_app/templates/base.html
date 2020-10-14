@@ -17,15 +17,15 @@
 <body>
 <!-- navvar -->
 <nav id="navbar">
-        <a href="{% url 'main' %}"><img id="logo_img" src='{% static "img/wolsodam_logo.png" %}' alt="logo"></a>
+       <a  href="{% url 'main' %}"><img id="logo_img" src='{% static "img/wolsodam_logo.png" %}' alt="logo"></a>
         <a id="logo_text" href="{% url 'main' %}"></a>
 
     <ul>    
-        <li><a id="introduce" href="{% url 'introduce' %}">소개</a></li>
-        <li><a id="subscribe" href="{% url 'subscribe' %}">구독</a></li>
-        <li><a id="product" href="{% url 'product' %}">제품</a></li>
-        <li><a id="review" href="{% url 'review' %}">후기</a></li>
-        <li><a id="QA" href="{% url 'QA' %}">Q&A</a></li>
+        <li><a id="li_introduce" href="{% url 'introduce' %}">소개</a></li>
+        <li><a id="li_subscribe" href="{% url 'subscribe' %}">구독</a></li>
+        <li><a id="li_product" href="{% url 'product' %}">제품</a></li>
+        <li><a id="li_review" href="{% url 'review' %}">후기</a></li>
+        <li><a id="li_QA" href="{% url 'QA' %}">Q&A</a></li>
     </ul>
 
     {% if request.user.is_authenticated %}  <!-- 만약 로그인이 되어있는 상태이면-->
@@ -46,16 +46,34 @@
 <!-- end navvar -->
 
 <!-- content -->
+<div id="content">
 {% block content %}
 {% endblock content %}
+</div>
 <!-- end content -->
 
+<!-- footer -->
+<div id="footer">
+    <div id="footer-head">
+    이용약관 | 개인정보처리방침 | 오류신고
+    <span>FAMILY SITE ▼</span>
+    </div>
+    <div id="footer-body">
+    <div><img id="logo_img" src='{% static "img/wolsodam_logo.png" %}' alt="logo"></div>
+    <div id="footer-body-2">
+    서울시 영등포구 양평로19길 19 | TEL 02.3469.3114 | FAX 02.3469.3129 | 대표이사 : 조경수 | 사업자등록번호 : 107.81.11210 <br>
+    COPYRIGHT(C) 2013 BY LOTTE FOODS CO.,LTD.ALL RIGHT RESERVED.
+    </div>
+    </div>
+</div>
+<!-- end footer -->
+
 <script>
-    let introduce = document.getElementById("introduce");
-    let subscribe = document.getElementById("subscribe");
-    let product = document.getElementById("product");
-    let review = document.getElementById("review");
-    let QA = document.getElementById("QA");
+    let introduce = document.getElementById("li_introduce");
+    let subscribe = document.getElementById("li_subscribe");
+    let product = document.getElementById("li_product");
+    let review = document.getElementById("li_review");
+    let QA = document.getElementById("li_QA");
 
     let link = document.location.pathname;
 
