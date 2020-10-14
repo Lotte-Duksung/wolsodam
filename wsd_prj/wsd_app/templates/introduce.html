@@ -1,5 +1,40 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-<h1>소개 페이지</h1>
-{% endblock content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce</title>
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+</head>
+<body>
+    <div class="intro-img" style="width: 1640px;height: 500px;margin-left:140px;background-color:#8F9191"> <!--메인 이미지-->
+    </div class="intro wrapper">
+        <h1 id="intro-titile">푸드 얼리어답터를 위한<br> 롯데 신메뉴 시식 구독 서비스</h1>
+        <div class="grey-back">
+            <div class="arrow-box">
+                <p id="blah">새로운 건 내가 먼저 먹어보고 싶은데, 내 취향에 안맞아서 다 버리게 되는 건 아까워.. 매 달 어떤 제품이 새로나오는지 찾는 것도 귀찮고......"</p>
+            </div>
+            <div class="arrow2-box">
+            </div>
+        </div>
+        <h1 id="intro-titile">롯데 월소담(月少妉)이란?</h1>
+        <div class="intro-box">
+            <p id="silver-font">롯데 월소담은 롯데의 신제품을 매월 적은 양으로 즐길 수 있는 먼슬리 구독 서비스입니다.</p>
+            <p id="brown">　새로운 메뉴에 도전해보고 싶지만 많은 양과 낯선 메뉴에 대한 두려움에 쉽게 시도해보지 못했던 사람</p>
+            <p id="red">　신제품을 구하고 싶지만 매번 실패하거나 주변에 입점이 되지 않아 실패하는 사람</p>
+            <p id="brown">　야심차게 나왔지만 빛을 발하지 못하고 묻혀지는 제품들</p>
+            <p id="silver-font">이런 두려움과 망설임을 월소담으로 해결해 보세요!</p> 
+            <p id="silver-font">월소담이 롯데의 신제품들을 소분된 제품으로 한 박스에 모아 고객님의 집 앞으로 배달해 드립니다 :)</p>
+        </div>
+        <h1 id="intro-titile">월소담은 이런게 달라요!</h1>
+    <div>
+    </div>
+
+{% endblock content %}  
+</body>
+</html>
