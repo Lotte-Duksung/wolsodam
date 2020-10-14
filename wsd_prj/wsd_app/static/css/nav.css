@@ -4,6 +4,7 @@ html {
     /*스크롤 영역 따로 빼기*/
     overflow-x: hidden;
     margin-right: calc(-1 * (100vw - 100%));
+    height: 100%;
 }
 
 /*감사합니다*/
@@ -12,6 +13,54 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     color : black;
     margin: 0;
+    position : relative;
+    height: 100%;
+}
+
+#content{
+    position: relative;
+}
+
+#footer{
+    position : absolute;
+    width:100%;
+    height: 260px;
+}
+
+#footer-head{
+    display: flex;
+    height:75.5px;
+    font-size: 23px;
+    font-weight: bold;
+    border-top : 1px solid;
+    border-bottom: 1px solid;
+    border-top-color: #8F9191;
+    border-bottom-color : #8F9191;
+    border-top-width: 2px;
+    padding-left: 140px;
+    align-items: center;
+    color : #54585A;
+    justify-content: flex-start;
+}
+
+#footer-head span{
+    margin-left : auto;
+    margin-right : 180px;
+}
+
+#footer-body{
+    padding-top : 40px;
+    display : flex;
+    padding-left: 140px;
+    background-color: #F8F8F8;
+    padding-bottom : 80.5px;
+}
+
+#footer-body-2{
+    font-size : 16px;
+    padding-left : 133px;
+    padding-top: 11px;
+    color : #8F9191;
 }
 
 /*navbar 한줄로 나란히*/
@@ -21,6 +70,7 @@ body {
     justify-content: flex-start;
     padding: 10px 8%;
     box-shadow: 0px 3px 6px #00000029;
+    height : 126px;
 }
 
 /*nav바 이미지*/
@@ -46,7 +96,7 @@ body {
     /*padding : 23px 80px;*/
     padding: 0px 37px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 
@@ -56,7 +106,7 @@ body {
     margin-left:auto;
     font-weight: bold;
     color : #707070;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 #nav_log:hover{
@@ -67,7 +117,7 @@ body {
 #nav_logout{
     text-decoration: none;
     margin-left:37px;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     color : #707070
 }
@@ -91,6 +141,7 @@ li a{
 li a:hover{
     color : #DA291C;
 }
+
 
 
 /*구독*/
