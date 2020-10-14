@@ -30,7 +30,7 @@
 
     {% if request.user.is_authenticated %}  <!-- 만약 로그인이 되어있는 상태이면-->
 
-        <a id="nav_log" href="{% url 'mypage' %}">My 페이지</a>
+        <a id="nav_log" href="{% url 'mypage' %}"><span style="color: #AA7357;">{{ user.first_name }}</span>님</a>
         <a id="nav_logout" href="javascript:{document.getElementById('logout').submit()}">
             로그아웃
           </a>
