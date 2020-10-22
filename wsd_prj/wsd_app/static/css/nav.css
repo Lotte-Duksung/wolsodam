@@ -4,6 +4,7 @@ html {
     /*스크롤 영역 따로 빼기*/
     overflow-x: hidden;
     margin-right: calc(-1 * (100vw - 100%));
+    height: 100%;
 }
 
 /*감사합니다*/
@@ -12,6 +13,54 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     color : black;
     margin: 0;
+    position : relative;
+    height: 100%;
+}
+
+#content{
+    position: relative;
+}
+
+#footer{
+    position : absolute;
+    width:100%;
+    height: 260px;
+}
+
+#footer-head{
+    display: flex;
+    height:75.5px;
+    font-size: 23px;
+    font-weight: bold;
+    border-top : 1px solid;
+    border-bottom: 1px solid;
+    border-top-color: #8F9191;
+    border-bottom-color : #8F9191;
+    border-top-width: 2px;
+    padding-left: 140px;
+    align-items: center;
+    color : #54585A;
+    justify-content: flex-start;
+}
+
+#footer-head span{
+    margin-left : auto;
+    margin-right : 180px;
+}
+
+#footer-body{
+    padding-top : 40px;
+    display : flex;
+    padding-left: 140px;
+    background-color: #F8F8F8;
+    padding-bottom : 80.5px;
+}
+
+#footer-body-2{
+    font-size : 16px;
+    padding-left : 133px;
+    padding-top: 11px;
+    color : #8F9191;
 }
 
 /*navbar 한줄로 나란히*/
@@ -21,6 +70,7 @@ body {
     justify-content: flex-start;
     padding: 10px 8%;
     box-shadow: 0px 3px 6px #00000029;
+    height : 126px;
 }
 
 /*nav바 이미지*/
@@ -46,7 +96,7 @@ body {
     /*padding : 23px 80px;*/
     padding: 0px 37px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 
@@ -56,7 +106,7 @@ body {
     margin-left:auto;
     font-weight: bold;
     color : #707070;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 #nav_log:hover{
@@ -67,7 +117,7 @@ body {
 #nav_logout{
     text-decoration: none;
     margin-left:37px;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     color : #707070
 }
@@ -83,6 +133,11 @@ body {
     color : #707070
 }*/
 
+/* 앵커 밑줄 삭제 */
+a {
+    text-decoration: none;
+}
+
 li a{
     text-decoration: none;
     color : #707070
@@ -91,6 +146,7 @@ li a{
 li a:hover{
     color : #DA291C;
 }
+
 
 
 /*구독*/
@@ -207,7 +263,7 @@ li a:hover{
 }
 
 .post-menu a{
-    font-size:24px;
+    font-size:23px;
     font-weight: bold;
     width: 350px;
     height: 46px;
@@ -248,9 +304,9 @@ li a:hover{
 
 /*구독페이지2- 키트구성*/
 #kit-name{
-    font-size: 48px;
+    font-size: 47px;
     font-weight: bold;
-    padding-top:40px;
+    padding:20px 0px 20px 0px;
 }
 
 .post-sub-box{
@@ -258,22 +314,22 @@ li a:hover{
 }
 
 .item-box{
-    width: 1364px;
+    width: 932px;
     height: 210px;
     display: inline-block;
-    margin-top: 40px;
-    margin-bottom: 80px;
+    padding-top: 40px;
 }
 #new{
     color: #DA291C;
     font-weight: bold;
 }
 #item-name{
-    font-size: 36px;
+    font-size: 23px;
     font-weight: bold;
+    margin:0px;
 }
 #item-detail{
-    font-size:20px;
+    font-size:19px;
 }
 /*구독페이지2 - 신제품 소개*/
 .new-item-box{
@@ -315,7 +371,7 @@ li a:hover{
     font-size:23px;
 }
 .ordinary-item-detail{
-    margin :80px 67px 80px 67px;
+    margin :60px 76px 80px 0px;
     display:inline-block;
     text-align: center;
 }
@@ -332,13 +388,11 @@ li a:hover{
 #ordinary-item-name{
     width: 254px;
     height: 24px;
-    font-size:23px;
     font-weight: bold;
     text-align: center;
     margin-top:32px;
     margin-bottom: 40px;
 }
-
 #ordinary-item-click{
     text-align: center;
     width: 200px;
@@ -374,54 +428,83 @@ li a:hover{
 }
 /*구독페이지 2 - 주의사항 : 새로운 클래스 없음(아직은)*/
 /*구독페이지4 --> 구독페이지 3으로 변경*/
+.sub-page3{
+    margin-right: 278px;
+    margin-left:277px;
+    display: flex;
+}
+.pay-page{
+    height: 458px;
+    background-color: #F8F8F8;
+    margin-top:46px;
+}
+.pay-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.pay-title #goods-info{
+    font-size: 23px;
+    font-weight: bold;
+    padding-left: 580px;
+    padding-right: 580px;
+    margin:0px;
+}
+.pay-title #goods-quan{
+    font-size: 23px;
+    font-weight: bold;
+    padding-right: 125px;
+    margin:0px;
+}
+.pay-title #goods-price{
+    font-size: 23px;
+    font-weight: bold;
+    padding-right: 402px;
+    margin:0px;
+}
+.pay-main{
+    width: 1364px;
+    height: 264px;
+    background-color: #FFFFFF;
+    margin: 48px 278px 72px 278px;
+    justify-content: center;
+}
 .delivery-page{
     margin:0 auto;
 }
 #delivery-red-line{
-    width: 260px;
+    width: 674px;
     height: 0px;
-    border: 2px solid #DA291C;
+    border: 2px solid #AA7357;
     margin:0px auto;
 }
 .delivery-info{
-    text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
 }
-#input-delivery{
-    width: 150px;
-    height: 60px;
-    background: #F8F8F8 0% 0% no-repeat padding-box;
-    border-radius: 15px;
-    border:0px solid;
-    opacity: 1;
-    font: normal normal normal 20px/65px Noto Sans KR;
-    color: #8F9191;
-    text-align: center;
-}
+
 #input-post{
-    width: 260px;
+    width: 537px;
     height: 60px;
     border: 1px solid #54585A;
-    font: normal normal normal 20px/65px Noto Sans KR;
-    border-radius: 15px;
+    font: normal normal normal 19px/65px Noto Sans KR;
+    border-radius: 8px;
     opacity: 1;
     text-align: center;
 }
 #button-post{
     width: 110px;
-    height: 68px;
-    background: #8F9191 0% 0% no-repeat padding-box;
+    background:#DA291C 0% 0% no-repeat padding-box;
     border: 0px;
-    font: normal normal normal 20px/65px Noto Sans KR;
+    font: normal normal normal 23px/65px Noto Sans KR;
     border-radius: 15px;
     opacity: 1;
     text-align: center;
-    margin-left:22px;
+    margin-left:20px;
     color:#FFFFFF;
 }
-#twentyfour-bold{
-    font-size:24px;
+#twentythree-bold{
+    font-size:23px;
     font-weight: bold;
 }
 #twenty-bold{
@@ -429,16 +512,16 @@ li a:hover{
     font-weight: bold;
 }
 .delivery-box{
-    width: 536px;
+    width: 675px;
 }
 #input{
-    width: 536px;
+    width: 675px;
     height: 60px;
     background: #F8F8F8 0% 0% no-repeat padding-box;
-    border-radius: 15px;
+    border-radius: 8px;
     border:0px solid;
     opacity: 1;
-    font: normal normal normal 20px/65px Noto Sans KR;
+    font: normal normal normal 19px/65px Noto Sans KR;
     color: #8F9191;
 }
 .delivery-box2{
@@ -469,7 +552,39 @@ li a:hover{
     color: #8F9191;
     background-color: #F8F8F8;
 }
-
+.delivery-price{
+    height: 613px;  
+    background-color: #F8F8F8;
+    margin-top: 18px;
+    padding:55px;
+}
+.delivery-price-box{
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 57px;
+}
+.order-box{
+    justify-content: center;
+    display: flex;
+}
+.order{
+    width: 268px;
+    height: 60px;
+    background-color: #DA291C;
+    border-radius: 30px;
+    opacity: 1;
+    text-align: center;
+}
+.order a{
+    font-size:24px;
+    color: white;
+    line-height: 60px; 
+}
+#checkbox{
+    margin-top:67px;
+    margin-bottom:91px;
+}
 /* 로그인-회원가입-가입완료 페이지 */
 .text-center{
     text-align: center;
@@ -491,4 +606,86 @@ li a:hover{
 .review-box{
     margin:0 auto;
     text-align: center;
+}
+
+/*INTRODUCE*/
+#intro-titile{
+    font-size:47px;
+    font-weight: bold;
+    margin-top:122px;
+    margin-left: 416px;
+}
+.grey-back{
+    height: 638px;
+    background-color: #F8F8F8;
+    display: flex;
+}
+/*말풍선*/
+.arrow-box {
+	position: relative;
+	background: #DAB99C;
+    border-radius: 12px;
+    width: 874px;
+    height: 171px;
+    margin-top:91px;
+    margin-left:416px;
+}
+.arrow-box:after, .arrow-box:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow-box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color:  #DAB99C;
+	border-width: 30px;
+	margin-top: -30px;
+}
+.arrow-box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color:  #DAB99C;
+	border-width: 36px;
+	margin-top: -36px;
+}
+#blah{
+    width: 787px;
+    text-align: left;
+    font-size: 23px;
+    color: #FFFFFF;   
+    opacity: 1;
+    margin:40px;
+    line-height: 45px;
+}
+
+.intro-box{
+    margin-left: 416px;
+    text-align: left;
+}
+#brown{
+    background-color: #DAB99C;
+    height: 69px;
+    width: 1088px;
+    line-height: 69px;
+    border-radius: 8px;
+    text-align: left;
+    font-size:23px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+#red{
+    background-color: #DA291C;
+    height: 69px;
+    width: 1088px;
+    line-height: 69px;
+    border-radius: 8px;
+    text-align: left;
+    font-size:23px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
 }
