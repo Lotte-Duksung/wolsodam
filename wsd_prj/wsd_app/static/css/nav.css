@@ -16,7 +16,47 @@ body {
     position : relative;
     height: 100%;
 }
-
+/*폰트css모아둠*/
+#title-nonbold{ /*33px검정nonblod*/
+    font-size:33px;
+    margin:0px;
+}
+#title-bold{
+    font-size:33px;
+    font-weight: bold;
+    margin:0px;
+}
+#title-color-bold{
+    font-size: 47px;
+    font-weight: bold;
+    color: #AA7357;
+    margin:0px;
+}
+#title-non-bold{
+    font-size:47px;
+    font-weight:bold;
+}
+#name{ /*소개페이지안 팀소개 이름*/
+    font-size:23px;
+    font-weight: bold;
+    color:#AA7357;
+    margin:0px auto;
+}
+#n-team{ /*소개페이지안 팀소개 파트*/
+    font-size:19px;
+    color:#54585A;
+    margin:0px auto;
+}
+#ques-white{/*구독 MBTI 질문*/
+    color:#ffff;
+    font-size:24px;
+    font-weight: bold;
+}
+#silver-font{
+    color: #54585A;
+    font-size:23px;
+}
+/*폰트모음끄읏*/
 #content{
     position: relative;
 }
@@ -69,7 +109,6 @@ body {
     align-items: center;
     justify-content: flex-start;
     padding: 10px 8%;
-    box-shadow: 0px 3px 6px #00000029;
     height : 126px;
 }
 
@@ -150,22 +189,9 @@ li a:hover{
     top: 160px;
     height: 91px;
     margin-top: 80px;
+    margin-bottom: 80px;
 }
-#diamond{
 
-    width: 68px;
-    height: 68px;
-    line-height: 68px;
-    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
-    background-color:#ffff;
-    border: 2px solid #8F9191;
-    border-radius: 12px;
-    text-align: center;
-    line-height: 68px;
-    font-size:24px;
-    margin:0 69px;
-    display:inline-block;
-}
 .sub-title{
     font-size:36px;
     font-weight: bold;
@@ -196,17 +222,37 @@ li a:hover{
     margin:40px 416px;
     display: flex;
 }
-.sub-page1-content{
-    top: 402px;
-    left: 416px;
-    width: 1088px;
-    height: 1200px;
-    background-color: #F8F8F8;
+#line-mini{
+    width: 59px;
+    height: 11px;
+    background: #AA7357;
+    margin-bottom:24px;
 }
-
+.sub-page1-content{
+    width: 1088px;
+}
+.ques-box{
+    height: 435px;
+    background: #DAB99C;
+    margin-top:80px;
+    padding-left:138px;
+}
+.yesorno{
+    width: 812px;
+    height: 59px;
+    border-radius: 30px;
+    background-color: #DA291C;
+    color:#FFFFFF;
+    line-height: 59px;
+    text-align: center;
+}
+/*mbti 결과창 페이지*/
+.mbti-box{
+    height: 264px;
+}
 /*구독 페이지 2 --> 구독페이지4로 변경*/
 
-.sub-page2{
+.sub-page4{
     margin:91px 140px;
     text-align: center;
 }
@@ -232,21 +278,14 @@ li a:hover{
 
 /*구독 페이지 3 --> 구독페이지 2로 변경*/
 .sub-page-img{
-    top: 402px;
-    left: 140px;
-    width: 1640px;
-    height: 800px;
-    background-color: #8F9191;
     margin:40px 140px 160px 140px;
-    border-radius: 15px;
     color: #ffff;
     text-align: center;
-    line-height: 800px;
 }
 .postbox-wrapper{
     padding-bottom: 80px;
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 280px;
+    padding-right: 284px;
 }
 .post-menu {
     text-align: center;
@@ -291,15 +330,40 @@ li a:hover{
 
 .post-box1{
     text-align: left;
-    margin : 80px 138px;
+    margin : 107px 109px 145px 109px;
 }
 
-/*구독페이지2- 키트구성*/
+/*구독페이지2- 키트소개*/
+.sub-page2{
+    padding-bottom: 282px;
+}
+
+/*글꼴*/
 #kit-name{
-    font-size: 47px;
+    font-size: 33px;
     font-weight: bold;
+    color:#AA7357;
     padding:20px 0px 20px 0px;
 }
+#price-kit{
+    font-size:33px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+#item-name{
+    font-size: 23px;
+    font-weight: bold;
+    margin:0px;
+}
+#item-detail{
+    font-size:19px;
+    color:#54585A;
+} 
+#new{
+    color: #DA291C;
+    font-weight: bold;
+}
+/*글꼴 끝*/
 
 .post-sub-box{
     text-align: justify;
@@ -311,27 +375,18 @@ li a:hover{
     display: inline-block;
     padding-top: 40px;
 }
-#new{
-    color: #DA291C;
-    font-weight: bold;
-}
-#item-name{
-    font-size: 23px;
-    font-weight: bold;
-    margin:0px;
-}
-#item-detail{
-    font-size:19px;
-}
+
+
 /*구독페이지2 - 신제품 소개*/
 .new-item-box{
     justify-content: left;
     display: flex;
 }
-.item-img{
-    width: 536px;
-    height: 454px; /*원래 높이 414인데 글씨가 내려가면서 수평이 안맞아서 임의로 바꿈*/
-    background-color: #F8F8F8;
+
+#began{
+    width: 415px;
+    height: 414px;
+    padding-top:20px;
 }
 
 .item-introduce{
@@ -363,7 +418,7 @@ li a:hover{
     font-size:23px;
 }
 .ordinary-item-detail{
-    margin :60px 76px 80px 0px;
+    margin :60px 76px 0px 0px;
     display:inline-block;
     text-align: center;
 }
@@ -401,25 +456,25 @@ li a:hover{
     text-align: center;
 }
 
-#silver-font{
-    color: #54585A;
-    font-size:23px;
-}
 /*구독페이지 2 - 가격*/
 .buy-kit{
     text-align: center;
 }
 .buy-kit-box{
-    display:inline-block;
-    margin-top:140px;
+    margin-top:127px;
     margin-left:100px;
     margin-right: 100px;
+    display:flex;
+    justify-content:space-between;
 }
 #buy-kit-img{
     text-align: center;
 }
-/*구독페이지 2 - 주의사항 : 새로운 클래스 없음(아직은)*/
+
 /*구독페이지4 --> 구독페이지 3으로 변경*/
+.sub-page3t{
+    padding-bottom: 520px;
+}
 .sub-page3{
     margin-right: 278px;
     margin-left:277px;
@@ -438,7 +493,7 @@ li a:hover{
 .pay-title #goods-info{
     font-size: 23px;
     font-weight: bold;
-    padding-left: 580px;
+    padding-left: 200px;
     padding-right: 580px;
     margin:0px;
 }
@@ -451,7 +506,6 @@ li a:hover{
 .pay-title #goods-price{
     font-size: 23px;
     font-weight: bold;
-    padding-right: 402px;
     margin:0px;
 }
 .pay-main{
@@ -461,6 +515,55 @@ li a:hover{
     margin: 48px 278px 72px 278px;
     justify-content: center;
 }
+.pay-main-info{
+    display: flex;
+}
+/*체크박스*/
+input[id="cb1"] + label {
+	display: inline-block;
+	width: 25px;
+    height: 25px;
+    border: 2px solid #AA7357;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:122px 70px 117px 68px;
+}
+input[id="cb1"]:checked + label {
+	background-color: #AA7357;
+}
+input[id="cb1"] {
+	display: none;
+}
+/*체크박스끄읏*/
+#img{
+    width: 122px;
+    height: 122px;
+    border: 2px solid #AA7357;
+    border-radius: 8px;
+    margin-top: 78px;
+}
+#inside-img{
+    width: 132px;
+    height: 68px;
+    margin-top: 27px;
+}
+.kit-info{
+    margin-left: 22px;
+    margin-top: 115px;
+}
+/*수량버튼*/
+.many{
+    margin-left: 368px;
+    margin-top:122px;
+}
+#mpbutton{
+    width: 25px;
+    height: 25px;
+    background: #AA7357;
+    border-radius: 5px;
+}
+
+/*수량버튼끝*/
 .delivery-page{
     margin:0 auto;
 }
@@ -599,10 +702,13 @@ li a:hover{
 }
 
 /*INTRODUCE*/
-#intro-titile{
+.intro{
+    padding-bottom: 269px;
+}
+#intro-title{
     font-size:47px;
     font-weight: bold;
-    margin-top:122px;
+    margin-top:182px;
     margin-left: 416px;
 }
 .grey-back{
@@ -610,53 +716,17 @@ li a:hover{
     background-color: #F8F8F8;
     display: flex;
 }
-/*말풍선*/
-.arrow-box {
-	position: relative;
-	background: #DAB99C;
-    border-radius: 12px;
-    width: 874px;
-    height: 171px;
-    margin-top:91px;
-    margin-left:416px;
-}
-.arrow-box:after, .arrow-box:before {
-	right: 100%;
-	top: 50%;
-	border: solid transparent;
-	content: "";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
-
-.arrow-box:after {
-	border-color: rgba(136, 183, 213, 0);
-	border-right-color:  #DAB99C;
-	border-width: 30px;
-	margin-top: -30px;
-}
-.arrow-box:before {
-	border-color: rgba(194, 225, 245, 0);
-	border-right-color:  #DAB99C;
-	border-width: 36px;
-	margin-top: -36px;
-}
-#blah{
-    width: 787px;
-    text-align: left;
-    font-size: 23px;
-    color: #FFFFFF;   
-    opacity: 1;
-    margin:40px;
-    line-height: 45px;
-}
-
 .intro-box{
     margin-left: 416px;
     text-align: left;
+    width: 1088px;
 }
+.intbox{
+    display:flex;
+    margin-bottom:43px;
+    margin-top:40px;
+}
+
 #brown{
     background-color: #DAB99C;
     height: 69px;
@@ -678,4 +748,53 @@ li a:hover{
     font-size:23px;
     letter-spacing: 0px;
     color: #FFFFFF;
+}
+
+#aa7357{
+    width: 320px;
+    height: 180px;
+    background-color: #AA7357;
+    border-radius: 8px;
+    color:#FFFFFF;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 290px;
+    padding-left:31px;
+}
+#dab99c{
+    width: 320px;
+    height: 180px;
+    background-color: #DAB99C;
+    border-radius: 8px;
+    color:#FFFFFF;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 290px;
+    padding-left:31px;
+}
+#da291c{
+    width: 320px;
+    height: 180px;
+    background-color: #DA291C;
+    border-radius: 8px;
+    color:#FFFFFF;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 290px;
+    padding-left:31px;
+}
+#team{
+    width: 231px;
+    height: 85px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 8px;
+    padding-left: 29px;
+    padding-top: 23px;
+}
+#nonteam{
+    width: 260px;
+    height: 108px;
 }
