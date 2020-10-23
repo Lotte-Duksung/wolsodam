@@ -175,6 +175,7 @@ li a:hover{
 /*구독*/
 .sub-page{
     margin:0 auto;
+    padding-bottom: 210px;
 }
 .sub-top-menu-wrapper{
     text-align: center;
@@ -201,7 +202,7 @@ li a:hover{
     height: 60px;
     border-radius: 30px;
     background-color: #DA291C;
-    margin:0px 692px 276px 692px;
+    margin:0px 692px;
 }
 .next a{
     font-size:24px;
@@ -366,7 +367,7 @@ li a:hover{
 
 /*구독페이지2- 키트소개*/
 .sub-page2{
-    padding-bottom: 282px;
+    padding-bottom: 100px;
 }
 
 /*글꼴*/
@@ -393,6 +394,7 @@ li a:hover{
 #new{
     color: #DA291C;
     font-weight: bold;
+    font-size:23px;
 }
 /*글꼴 끝*/
 
@@ -466,6 +468,7 @@ li a:hover{
 #ordinary-item-name{
     width: 254px;
     height: 24px;
+    font-size:23px;
     font-weight: bold;
     text-align: center;
     margin-top:32px;
@@ -504,7 +507,7 @@ li a:hover{
 
 /*구독페이지4 --> 구독페이지 3으로 변경*/
 .sub-page3t{
-    padding-bottom: 520px;
+    padding-bottom: 100px;
 }
 .sub-page3{
     margin-right: 278px;
@@ -828,7 +831,6 @@ input[id="cb6"] {
     font-weight: bold;
     text-align: center;
     margin-left: 30px;
-    margin-bottom: 162px;
 }
 .go-product a{
     text-decoration: none;
