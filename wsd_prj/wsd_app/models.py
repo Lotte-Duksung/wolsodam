@@ -7,6 +7,5 @@ from django.contrib.auth.models import User
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    phone = models.CharField(max_length=50, blank=True)
+    phone = models.CharField(max_length=15, blank=True)
     birth_date = models.DateTimeField(null=True, blank=True)
-    gender = models.TextField(max_length=50, blank=True)
