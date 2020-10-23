@@ -33,7 +33,7 @@ def product(requests):
 
 def login(requests):
     if requests.method == 'POST':    # POST 방식으로 들어온 지 확인
-        username = requests.POST['username'] # 사용자로부터 전달 받은 유저 이름을 넣음
+        username = requests.POST['username'] # 사용자로부터 전달 받은 아이디
         password = requests.POST['password'] # 사용자로부터 전달 받은 패스워드를 넣음
         user = auth.authenticate(requests, username=username, password=password) # 전달받은 변수를 유저 변수에 넣어줌
         if user is not None:    # 유저가 존재한다면
