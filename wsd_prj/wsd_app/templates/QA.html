@@ -1,16 +1,107 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QnA</title>
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
 </head>
 <body>
+    <div class="sub-page">
+        <div class="qna-page">
+        <h1 id="kit-name">FAQ</h1>
+
+        <div class="qna-box">
+            <div class="question" type="button" data-toggle="collapse" data-target="#ans1" aria-expanded="false" aria-controls="ans1">
+            키트 구성이 마음에 들지 않아서 특정 달에는 주문하지 않고 싶은데 가능할까요?
+            <div class="collapse" id="ans1">
+                <div class="answer">
+                    네, 키트 구성이 마음에 들지 않으면 '이번 달은 쉬어가기' 기능을 선택해주시면 됩니다.
+                </div>
+            </div>
+            </div>
+
+            
+            <div class="question" type="button" data-toggle="collapse" data-target="#ans2" aria-expanded="false" aria-controls="ans2">
+            키트 구성 상품을 추천 제품으로 바꿀 수 있나요?
+            <div class="collapse" id="ans2">
+                <div class="answer">
+                    아니요, 키트 구성 상품을 변경하실 수 없습니다. 추천 제품은 하단의 링크를 통해 롯데ON 홈페이지에서 구매하실 수 있습니다.
+                </div>
+            </div>
+            </div>
+
+            
+            <div class="question" type="button" data-toggle="collapse" data-target="#ans3" aria-expanded="false" aria-controls="ans3">
+            월소담에서 다루는 상품들은 주로 어떤 것인가요?
+            <div class="collapse" id="ans3">
+                <div class="answer">
+                    해당 달의 테마에 맞는 시식용 소분 식품입니다. 롯데의 신제품을 위주로 기존 제품과 어우러져 새로운 상품들을 하나의 테마로 부담없이 즐겨보실 수 있는 상품입니다.
+                </div>
+            </div>
+            </div>
+
+            
+            <div class="question" type="button" data-toggle="collapse" data-target="#ans4" aria-expanded="false" aria-controls="ans4">
+            배송은 얼마나 걸리나요?
+            <div class="collapse" id="ans4">
+                <div class="answer">
+                    배송은 출발일 기준 2~3일 정도 소요됩니다.
+                </div>
+            </div>
+            </div>
+
+            
+            <div class="question" type="button" data-toggle="collapse" data-target="#ans5" aria-expanded="false" aria-controls="ans5">
+            배송비는 별도인가요?
+            <div class="collapse" id="ans5">
+                <div class="answer">
+                    배송비는 구독료에 포함되기 때문에 지불하실 필요가 없습니다.
+                </div>
+            </div>
+            </div>
+
+            
+            <div class="question" type="button" data-toggle="collapse" data-target="#ans6" aria-expanded="false" aria-controls="ans6">
+            구독 중 배송지 변경이 가능한가요?
+            <div class="collapse" id="ans6">
+                <div class="answer">
+                네, 가능합니다. 하지만 매 달 배송일인 20일 이전에 배송지 변경을 해주셔야지만 변경된 배송지로 안전하게 배송되니 이 점 유의해주시길 바랍니다.
+                </div>
+            </div>
+            </div>
+
+
+            <div class="question" type="button" data-toggle="collapse" data-target="#ans7" aria-expanded="false" aria-controls="ans7">
+            구독 취소는 어떻게 하나요?
+            <div class="collapse" id="ans7">
+                <div class="answer">
+                '마이페이지> 설정> 구독취소'의 경로를 통해 구독 취소가 가능합니다. 구독 서비스 특성 상 배송 예정일 일주일 전까지만 취소가 가능하다는 점 당부드립니다.
+                </div>
+            </div>
+            </div>
+
+
+            <div class="question" type="button" data-toggle="collapse" data-target="#ans8" aria-expanded="false" aria-controls="ans8">
+            결제일 이후 구독 취소를 하면 환불 받을 수 있나요?
+            <div class="collapse" id="ans8">
+                <div class="answer">
+                이 달의 키트를 배송받기 전이라면 환불이 가능합니다. 하지만 이 달의 키트를 배송 받은 이후에는 식품 키트 특성상 환불이 어려운 점 양해부탁드립니다.
+                </div>
+            </div>   
+            </div>
+                  
+        </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
 {% endblock content %}

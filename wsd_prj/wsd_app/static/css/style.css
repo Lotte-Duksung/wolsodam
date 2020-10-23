@@ -163,10 +163,10 @@ p { font-size: 23px; }
 
 /*3.BEST 후기*/
 .main-review {
-    max-width: 100%;
-    width: 90%;
+    max-width: 1450px; 
+    width: 80%;
+    margin: 190px auto 233px;
     text-align: center;
-    margin: 20px 0 180px 10%;
 }
 
 .best-review {
@@ -187,26 +187,69 @@ p { font-size: 23px; }
     justify-content: center;
     margin-top: 127px;
 }
+.review-page{
+    margin: 20px auto;
+    text-align: center;
+}
+.review-div {
+    max-width: 100%;
+    width: 90%;
+    text-align: center;
+    margin: 80px 0 100px 10%;
+}
 .review-table {
     border-collapse: collapse;
     width: 85%;
-    text-align: center;
-    font-size: 18px;
+    text-align: left;
+    font-size: 20px;
 
 }
 thead {
     border-bottom: 3px solid #AA7357;
-    font-size: 20px;
+    font-size: 24px;
+}
+th {
+    padding: 2.5rem;
 }
 td {
     background-color: #F8F8F8;
-    border: 8px;
+    border-bottom: 1rem solid white;
+    padding: 1.5rem;
 }
-td, th { 
-    padding: 2rem;
+.tbnum{ 
+    text-align: center;
 }
 
 .review-text {
     margin-top: 20px;
     text-align: left;
 }
+
+
+.qna-page {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.qna-box {
+    max-width: 100%;
+    width: 70%;
+    margin: 80px 15% 80px 15%;
+}
+.question {
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+    color : black;
+    padding : 2rem 0 2.5rem 2rem;
+    border-bottom : 2px solid #798083;
+}
+
+.answer {
+    font-size :18px;
+    font-weight: normal;
+    color : #54585A;
+    text-align : left;
+    padding-top: 2rem;
+}
+
