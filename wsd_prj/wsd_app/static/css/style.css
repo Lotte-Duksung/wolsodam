@@ -148,10 +148,10 @@ p { font-size: 23px; }
 
 /*3.BEST 후기*/
 .main-review {
-    max-width: 1600px;
+    max-width: 100%;
     width: 90%;
     text-align: center;
-    margin: 80px auto 160px;
+    margin: 20px 0 180px 10%;
 }
 
 
@@ -160,19 +160,27 @@ p { font-size: 23px; }
     border-bottom: 2px solid #DA291C;
 }
 
-/*이미지 임시 값*/
-#review { 
-    width: 500px; height: 374px;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 15px;
-}
-
 .review {
     display: flex;
     justify-content: center;
 }
-.review-box {
-    padding: 80px 26px 160px;
+.review-table {
+    border-collapse: collapse;
+    width: 85%;
+    text-align: center;
+    font-size: 18px;
+
+}
+thead {
+    border-bottom: 3px solid #AA7357;
+    font-size: 20px;
+}
+td {
+    background-color: #F8F8F8;
+    border: 8px;
+}
+td, th { 
+    padding: 2rem;
 }
 
 
