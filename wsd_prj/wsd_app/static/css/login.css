@@ -1,0 +1,80 @@
+
+/* 로그인-회원가입-가입완료 페이지 */
+.text-center{
+    text-align: center;
+    height:700px;
+}
+
+#ll{
+    font-size: 33px;
+    font-weight: bold;
+}
+
+#inputC{
+    width: 536px;
+    height: 60px;
+    margin-bottom: 16px;
+    font-size: 23px;
+    color: #8F9191;
+    padding-left:20px;
+    background-color: #F8F8F8;
+    border: 0;
+}
+
+#CCC{
+    margin-top: 34px;
+    margin-left: auto;
+    margin-right : auto;
+    width : 555px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#ccc{
+    font-size: 16px;
+    color:#54585A;
+}
+
+#ww{
+    margin-left : auto;
+    color : #8F9191;
+}
+
+input[id="c"] + label {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border:0;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ input[id="c"]:checked + label {
+    background-color: #DA291C;
+ }
+
+ input[id="c"] {
+    display: none;
+ }
+
+input[type="submit"]{
+    margin-top: 106px;
+    width: 536px;
+    height : 60px;
+    background-color: #DA291C;
+    color: white;
+    font-size: 23px;
+    border : 0;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color:#8F9191
+}
+
+a:link{
+    color:#8F9191
+}

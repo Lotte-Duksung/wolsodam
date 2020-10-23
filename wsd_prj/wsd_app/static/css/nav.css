@@ -81,14 +81,6 @@ body {
     margin-top:10px;
 }
 
-/* 없앨까요??
-#logo_text{
-    text-decoration: none;
-    font-weight:bold;
-    color:#DA291C;
-    font-size:23px;
-}*/
-
 /* nav바 소개, 구독, 제품, 후기 Q&A */
 #navbar ul li{
     display : inline;
@@ -519,11 +511,6 @@ li a:hover{
     font: normal normal normal 20px/65px Noto Sans KR;
     color: #8F9191;
     background-color: #F8F8F8;
-}
-
-/* 로그인-회원가입-가입완료 페이지 */
-.text-center{
-    text-align: center;
 }
 
 /*PRODUCT PAGE*/
