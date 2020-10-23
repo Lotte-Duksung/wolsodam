@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구독페이지</title>
+</head>
+<body>
+{% block content %}
+<div class="sub-page">
+    <div class = "sub-wrapper">
+        <div class = "sub-top-menu-wrapper">
+            <img id="stage" src="../static/img/stage1.png" />
+        </div>
+        <div class="sub-title">
+            입맛 유형 테스트
+        </div>
+        <div class="sub-page1">
+            <div class="mbti-box">
+                <hr id="mbti-mini-line"></hr>
+                <p id="mbti-mini-text">당신의 입맛은</p>
+                <p id="mbti-big">MSAA형</p>
+            </div>
+        </div>
+        <div class="mbti">
+            <div class="mbti-mini">
+                <div id = "mbti-ex">M : Meat / V : Vegetable</div><div id = "mbti-ex">A : Adult / C : Children</div>
+            </div>
+            <div class="mbti-mini">
+                <div id = "mbti-ex">H : Hot / S : Sweet</div><div id = "mbti-ex">A: Allergy / N : Non-Allergy</div>
+            </div>
+        </div>
+        <div class="sub-bottom">
+            <div class="next"><a href="{% url 'subscribe2' %}">다음 단계로</a></div>
+        </div>
+    </div>
+</div>
+{% endblock content %}  
+</body>
+</html>

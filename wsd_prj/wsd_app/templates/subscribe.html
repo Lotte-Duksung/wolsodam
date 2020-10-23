@@ -12,23 +12,66 @@
 <div class="sub-page">
     <div class = "sub-wrapper">
         <div class = "sub-top-menu-wrapper">
-            <div id="diamond">1</div>
-            <div id="diamond">2</div>
-            <div id="diamond">3</div>
-            <div id="diamond">4</div>
+            <img id="stage" src="../static/img/stage1.png" />
         </div>
         <div class="sub-title">
-            취향조사
+            입맛 유형 테스트
         </div>
         <div class="sub-page1">
+        
             <div class="sub-page1-content">
+                <div id="line-mini"></div>
+                <div>
+                    <p id="title-nonbold">단짠파? 고소파? </p>
+                    <p id="title-color-bold">나는 어떤 입맛일까?</p>
+                </div>
+                <div class="ques-box">
+                    <img id="ques" src="../static/img/ques1.png" />
+                    <div>
+                        <p id="ques-white">나는 평소 고기보다 채식 위주의 식사를 즐긴다 🥗</p>
+                        <div class="yesorno"><a id="vegetable" onclick="mc()"><p id="ques-white">네!</p></a></div>
+                        <div class="yesorno"><a id="meat"><p id="ques-white">아니오!</p></a></div>
+                    </div>
+                </div>
+                <div class="ques-box">
+                    <img id="ques" src="../static/img/ques2.png" />
+                    <div>
+                        <p id="ques-white">나는 매운 맛의 화끈함을 즐긴다 🔥</p>
+                        <div class="yesorno"><a id="hot"><p id="ques-white">네!</p></a></div>
+                        <div class="yesorno"><a id="sweet"><p id="ques-white">아니오!</p></a></div>
+                    </div>
+                </div>
+                <div class="ques-box">
+                    <img id="ques" src="../static/img/ques3.png" />
+                    <div>
+                        <p id="ques-white">나는 주위 사람에게 아기 입맛이라는 이야기를 듣는다 👶</p>
+                        <div class="yesorno"><a id="children"><p id="ques-white">네!</p></a></div>
+                        <div class="yesorno"><a id="adult"><p id="ques-white">아니오!</p></a></div>
+                    </div>
+                </div>
+                <div class="ques-box">
+                    <img id="ques" src="../static/img/ques4.png" />
+                    <div>
+                        <p id="ques-white">나는 어떤 음식이든 몸이 잘 받아들인다 👍</p>
+                        <div class="yesorno"><a id="nonallergy"><p id="ques-white">네!</p></a></div>
+                        <div class="yesorno"><a id="allergy"><p id="ques-white">아니오!</p></a></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="sub-bottom">
-            <div class="next"><a href="{% url 'subscribe2' %}">다음 단계</a></div>
+            <div class="next"><a href="{% url 'mbti' %}">결과보기</a></div>
         </div>
     </div>
 </div>
+<script>
+
+    function mc(){
+        var M
+        M = document.getElementById("vegetable");
+    }
+
+</script>
 {% endblock content %}  
 </body>
 </html>

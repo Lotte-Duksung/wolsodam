@@ -7,96 +7,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>구독페이지</title>
 </head>
-<body>
+<body onload="init();">
 {% block content %}
 <div class="sub-page">
     <div class = "sub-wrapper">
         <header class = "sub-top-menu-wrapper">
-            <div id="diamond">1</div>
-            <div id="diamond">2</div>
-            <div id="diamond">3</div>
-            <div id="diamond">4</div>
+            <img id="stage" src="../static/img/stage3.png" />
         </header>
         <div class="sub-title">
             결제 진행
         </div>
-        <div class="pay-page">
-            <div class="pay-title">
-                <p id="goods-info">상품 정보</p>
-                <p id="goods-quan">수량</p>
-                <p id="goods-price">상품 금액</p>
-            </div>
-            <div class = "pay-main">
-                <div class="pay-main-info">
+        
+        <div class="sub-page3t">
+            <div class="pay-page">
+                <div class="pay-title">
+                    <p id="goods-info">상품 정보</p>
+                    <p id="goods-quan">수량</p>
+                    <p id="goods-price">상품 금액</p>
+                </div>
+                <div class = "pay-main">
+                    <div class="pay-main-info">
+                        <input type="checkbox" id="cb1">
+                        <label for="cb1"></label>
+                        <div id="img"><img id="inside-img" src='{% static "img/wolsodam_2.png" %}' alt="img"></div>
+                        <div class ="kit-info"><p id="item-name">비건kit</p><p style="font-size:19px;margin:0px;">00,000원</p></div>
+                        <div class="many">
+                            <form name="form" method="get">
+                                <input type="button" value=" - " onclick="del();" id="mpbutton">
+                                <input type="text" name="amount" value="1" size="3" onchange="change();" id="howmany">
+                                <input type=hidden name="sell_price" value="5500">
+                                <input type="button" value=" + " onclick="add();" id="mpbutton"><br>
+                            </form>
+                        </div>      
+                        <div class ="kit-price"><p id="item-name">00,000원</p></div>      
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="sub-page3">
-            <div class="delivery-page">
-                <div class="delivery-info">
-                    <p id="twentythree-bold">배송 정보</p>
-                    <hr id="delivery-red-line">
+            <div class="sub-page3">
+                <div class="delivery-page">
+                    <div class="delivery-info">
+                        <p id="twentythree-bold">배송 정보</p>
+                        <hr id="delivery-red-line">
+                    </div>
+                    <div class = "delivery-box">
+                        <p id="twenty-bold">받는 이</p>
+                        <input type="text" id="input" placeholder="이름 입력"></input><br><br>
+                        <p id="twenty-bold">전화번호</p>
+                        <input type="text" id="input" placeholder="000-0000-0000"></input><br><br>
+                        <p id="twenty-bold">우편번호</p>
+                        <input type="text" id="input-post" placeholder="우편번호 검색"></input><button id="button-post">검색</button><br><br>
+                        <p id="twenty-bold">배송지</p>
+                        <input type="text" id="input" placeholder="배송지"></input><br><br>
+                        <input type="text" id="input" placeholder="상세 정보"></input><br><br>
+                        <p id="twenty-bold">배송 메모</p>
+                        <input type="text" id="input" placeholder="부재 시 경비실에 놔두세요."></input><br><br>
+                    </div>
+                    <div class="delivery-info">
+                        <p id="twentythree-bold">결제 수단</p>
+                        <hr id="delivery-red-line">
+                    </div>
+                    <div class = "delivery-box2">
+                        <label id="twenty-bold">휴대폰<input type="checkbox" id="cb3"></input><label for="cb3"></label></label>
+                        <label id="twenty-bold">계좌이체<input type="checkbox" id="cb4"></input><label for="cb4"></label></label>
+                        <label id="twenty-bold">무통장입금<input type="checkbox" id="cb5"></input><label for="cb5"></label></label>
+                        <label id="twenty-bold">신용카드<input type="checkbox" id="cb6" checked=""></input><label for="cb6"></label></label>
+                    </div>
+                    <div class="delivery-box2">
+                        <p class="card" id="twenty-bold">신용카드</p>
+                        <p class="card" id="twenty-bold">할부</p>
+                    </div>
+                    <div class="delivery-box2">
+                        <select id="card-sort">
+                            <option selected>하나</option>
+                            <option>신한</option>
+                            <option>농협</option>
+                            <option>카카오페이</option>
+                            <option>국민</option>
+                            <option>롯데</option>
+                        </select>
+                        <select id="installment">
+                            <option selected>일시불</option>
+                            <option>6개월</option>
+                            <option>12개월</option>
+                            <option>24개월</option>
+                        </select>
+                    </div>
                 </div>
-                <div class = "delivery-box">
-                    <p id="twenty-bold">받는 이</p>
-                    <input type="text" id="input" placeholder="이름 입력"></input><br><br>
-                    <p id="twenty-bold">전화번호</p>
-                    <input type="text" id="input" placeholder="000-0000-0000"></input><br><br>
-                    <p id="twenty-bold">우편번호</p>
-                    <input type="text" id="input-post" placeholder="우편번호 검색"></input><button id="button-post">검색</button><br><br>
-                    <p id="twenty-bold">배송지</p>
-                    <input type="text" id="input" placeholder="배송지"></input><br><br>
-                    <input type="text" id="input" placeholder="상세 정보"></input><br><br>
-                    <p id="twenty-bold">배송 메모</p>
-                    <input type="text" id="input" placeholder="부재 시 경비실에 놔두세요."></input><br><br>
-                </div>
-                <div class="delivery-info">
-                    <p id="twentythree-bold">결제 수단</p>
-                    <hr id="delivery-red-line">
-                </div>
-                <div class = "delivery-box2">
-                    <label id="twenty-bold">휴대폰<input type="radio" checked=""></input></label>
-                    <label id="twenty-bold">계좌이체<input type="radio" checked=""></input></label>
-                    <label id="twenty-bold">무통장입금<input type="radio" checked=""></input></label>
-                    <label id="twenty-bold">신용카드<input type="radio" checked=""></input></label>
-                </div>
-                <div class="delivery-box2">
-                    <p class="card" id="twenty-bold">신용카드</p>
-                    <p class="card" id="twenty-bold">할부</p>
-                </div>
-                <div class="delivery-box2">
-                    <select id="card-sort">
-                        <option selected>하나</option>
-                        <option>신한</option>
-                    </select>
-                    <select id="installment">
-                        <option selected>일시불</option>
-                        <option>6개월</option>
-                    </select>
-                </div>
-            </div>
-            <div class="delivery-page">
-                <div class="delivery-info">
-                    <div id="twentythree-bold">결제 금액</div>
-                    <div class="delivery-price">
-                        <div class="delivery-price-box">
-                            <div id="twentythree-bold">주문 금액</div>
-                            <div id="twentythree-bold">00,000원</div>
-                        </div>
-                        <div class="delivery-price-box">
-                            <div id="twentythree-bold">배송비</div>
-                            <div id="twentythree-bold">0,000원</div>
-                        </div>
-                        <div class="delivery-price-box">
-                            <hr style="width: 460px;border: 1px solid #AA7357;">
-                        </div>
-                        <div class="delivery-price-box">
-                            <div id="twentythree-bold">최종 결제 금액</div>
-                            <div id="twentythree-bold">00,000원</div>
-                        </div>
-                        <p style="font-size:16px;color:#54585A;text-align:center;"><input type="checkbox" id="checkbox">위 상품의 구매 조건 확인 및 결제 진행에 동의합니다.</input></p>
-                        <div class="order-box">
-                            <div class="order"><a href="{% url 'subscribe4' %}">결제하기</a></div>
+                <div class="delivery-page">
+                    <div class="delivery-info">
+                        <div id="twentythree-bold">결제 금액</div>
+                        <div class="delivery-price">
+                            <div class="delivery-price-box">
+                                <div id="twentythree-bold">주문 금액</div>
+                                <div id="twentythree-bold">00,000원</div>
+                            </div>
+                            <div class="delivery-price-box">
+                                <div id="twentythree-bold">배송비</div>
+                                <div id="twentythree-bold">0,000원</div>
+                            </div>
+                            <div class="delivery-price-box">
+                                <hr style="width: 460px;border: 1px solid #AA7357;">
+                            </div>
+                            <div class="delivery-price-box">
+                                <div id="twentythree-bold">최종 결제 금액</div>                           
+                                <div id="twentythree-bold">00,000원</div>
+                            </div>
+                            <p style="font-size:16px;color:#54585A;text-align:center;"><input type="checkbox" id="cb2"><label for="cb2"></label></input>　위 상품의 구매 조건 확인 및 결제 진행에 동의합니다.</p>
+                            <div class="order-box">
+                                <div class="order"><a href="{% url 'subscribe4' %}">결제하기</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -104,6 +123,46 @@
         </div>
     </div>
 </div>
+<script language="JavaScript">
+
+    var sell_price;
+    var amount;
+
+    function init () {
+        sell_price = document.form.sell_price.value;
+        amount = document.form.amount.value;
+        document.form.sum.value = sell_price;
+        change();
+    }
+
+    function add () {
+        hm = document.form.amount;
+        sum = document.form.sum;
+        hm.value ++ ;
+
+        sum.value = parseInt(hm.value) * sell_price;
+    }
+
+    function del () {
+        hm = document.form.amount;
+        sum = document.form.sum;
+            if (hm.value > 1) {
+                hm.value -- ;
+                sum.value = parseInt(hm.value) * sell_price;
+            }
+    }
+
+    function change () {
+        hm = document.form.amount;
+        sum = document.form.sum;
+
+            if (hm.value < 0) {
+                hm.value = 0;
+            }
+        sum.value = parseInt(hm.value) * sell_price;
+    }  
+
+</script>
 {% endblock content %}  
 </body>
 </html>

@@ -11,24 +11,19 @@
 {% block content %}
 <div class="sub-page">
     <header class = "sub-wrapper">
-        <div class = "sub-top-menu-wrapper">
-            <div id="diamond">1</div>
-            <div id="diamond">2</div>
-            <div id="diamond">3</div>
-            <div id="diamond">4</div>
-        </div>
         <div class="sub-title">
             결제 완료
         </div>
         
-        <div class="sub-page2 wrapper">
+        <div class="sub-page4 wrapper">
             <div>
                 <img id="wolsodam-center-img" src='{% static "img/wolsodam_2.png" %}' alt="img">
                 <p style="font-weight:bold;font-size:47px">월소담 키트, 곧 출발합니다.</p>
             </div>
         </div>
-        <div class="sub-bottom">
-            <div class="next"><a href="{% url 'product' %}">제품 구경하기</a></div>
+        <div class="sub-bottom2">
+            <div class="go-home"><a href="{% url 'main' %}">홈화면으로</a></div>
+            <div class="go-product"><a href="{% url 'product' %}">제품 구경하기</a></div>
         </div>
     </header>
 </div>

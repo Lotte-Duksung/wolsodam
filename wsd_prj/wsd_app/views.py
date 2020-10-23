@@ -10,6 +10,9 @@ def main(requests):
 def subscribe(requests):
     return render(requests, 'subscribe.html')
 
+def mbti(requests):
+    return render(requests, 'mbti.html')
+
 def subscribe2(requests):
     return render(requests, 'subscribe2.html')
 
@@ -56,7 +59,9 @@ def signup(requests):
             )
             phone = requests.POST["phone"]  
             birth_date = requests.POST["birth_date"]
-            profile = Profile(user=user, phone=phone, birth_date = birth_date)   #Profile 생성
+            addresscode = requests.POST["addresscode"]
+            address = requests.POST["address"]
+            profile = Profile(user=user, phone=phone, birth_date = birth_date, addresscode = addresscode, address = address)   #Profile 생성
             profile.save()  #Profile 저장
             auth.login(requests, user)   # 그 계정에 로그인을 하라는 요청을 다시 보냄
         return redirect('signup_complete')     # 메인으로 사용자가 갈 수 있게 리턴함
