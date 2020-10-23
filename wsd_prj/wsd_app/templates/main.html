@@ -14,7 +14,6 @@
 <body>
 <div class="main-img"> <!--메인 이미지&구독버튼-->
     <div class="main-img-text">
-        <p>배너(이 달의 키트 사진 및 홍보 문구)</p>
         <a class="button subscribe-btn" href="{% url 'subscribe' %}">구독하기</a>
     </div>
 </div>
@@ -22,51 +21,58 @@
 <div class="main-contents-box">
     <div class="main-contents">
         
-        <div class="box">
-            <p class="sub-title">서비스 네임</h2>
+        <div class="box1">
+            <div class="box1-title">
+                <span class="title red">롯데 </span>
+                <span class="title gold"> 월소담(月少妉)</span>
+            </div>
             <div class="item">
-                <div class="text-field">
-                    <p class="red title">대충 슬로건</p>
-                    <p class="gray line">대충 서비스에 관련된 이야기, 서비스의 목적, 취지, 의도, 효과, 구조 등등. Overview 내용을 간략히 적거나 흥미를 유발하는 문구 들어갈 자리. 한 3~5줄 되지 않을까. 이부분은 귀찮으면 다 이미지해서 박자.</p>
+                <div class="text-field-L">
+                    <p class="red sub-title">놓치고 싶지 않은 롯데 신상 식품들, 월소담에서</p>
+                    
+                    <div class="gray line">
+                    <p>신상 식품들에 거부감이 없는 도전적이신 분인가요?</p>
+                    <p>식품을 사려고 할 때 입맛에 안 맞으면 어쩌지 고민하신 적이 있으신가요?</p>
+                    <p class="line">월소담은 그런 당신을 위해 만들어졌습니다. 매 달 롯데 신상 식품들을 정기 구독으로 받아보세요. 
+                    시식의 즐거움이 유지될수 있도록 저희의 마음(할인 쿠폰😉)도 담았답니다. 월소담과 함께, 푸드 얼리어답터의 길로!</p>
+                    </div>
+                
                 </div>
-                <img id="servicename" src="../static/img/lotte_logo.png" />
+                <img id="servicename" src="../static/img/wolsodam_logo.png" />
             </div>
         </div><!-- END 서비스 네임 box -->
         
-        <div class="box">
+        <div class="box2">
             <p class="sub-title">이 달의 키트</p>
             <div class="item">
-                <img id="monthkit" src="../static/img/lotte_logo.png" />
-                <div class="text-field">
-                    <p class="title">키트네임(ex 비건)</p>
-                    <div class="gray">
-                        <p>①키트 구성품 들어가는 자리</p>
-                        <p>1️⃣키트 구성품 들어가는 자리</p>
-                        <p>키트 구성품 들어가는 자리</p>
+                <img id="monthkit" src="../static/img/main_kit.jpg" />
+                <div class="text-field-R">
+                    <p class="sub-title no-height gold">비건 KIT</p>
+                    <p class="sub-title gold">:동물 착취를 하지 않는 비건을 체험해보세요!</p>
+                    <div class="gray line">
+                        <p>① 제로미트 베지 함박 매쉬드 포테이토</p>
+                        <p>② 제로미트 베지 함박 오리지널</p>
+                        <p>③ 제로미트 베지 까스</p>
+                        <p>④ 제로미트 베지 너겟</p>
+                        <p>⑤ 해빗 건강한 마요</p>
                     </div>
                 </div>
             </div>
         </div><!-- END 이 달의 키트 box -->
 
-        <div class="box">
-            <p class="sub-title">배송 일자</p>
+        <div class="box3">
             <div class="item">
-                <div class="text-field">
-                    <p class="title">매월 20일 배송(예시)</p>
-                    <p class="gray">롯데 키트는 매월 15일, 20일에 배송합니다</p>
-                    <p class="gray">이 달의 키트를 받고 싶다면, 15일 전에 결제, 구독해주세요!</p>
+                <div class="text-field-L">
+                    <p class="sub-title">매월 20일 배송</p>
+                    <p class="gray line">롯데 키트는 매월 15일, 20일에 배송합니다</p>
+                    <p class="gray line">이 달의 키트를 받고 싶다면, 15일 전에 결제, 구독해주세요!</p>
                 </div>
-                <img id="delivery" src="../static/img/lotte_logo.png" />
+                <img id="delivery" src="../static/img/calendar.jpg" />
             </div>
         </div><!-- END 배송 box -->
 
         <div class="btn-box">
             <a class="button hover-btn" href="{% url 'subscribe' %}">구독하기</a>
-            <div class="box">
-                <p class="refe">※주의사항※</p>
-                <p class="refe">구독 시 주의사항 또는 관련 문구 적기</p>
-                <p class="refe">소비자 문의 번호 1587916-1152</p>
-            </div>
         </div><!-- END 버튼 box -->
 
     </div><!-- END main-contents -->
@@ -77,27 +83,20 @@
     <div class="review">
         <div class="review-box">
             <img id="review" src="../static/img/lotte_logo.png" />
-            <p class="bold gray">id123456</p>
-            <p>최고의 후기 뫄모마뫄뫄마</p>
-            <p>이것도 max-width정해야하는데</p>
-            <p>왜 시험기간이랑 겹친걸까ㅏㅏㅏ</p>
+            <p class="bold gray">[비건KIT] 제품명</p>
+            <p class="review-text refe gray line-small">비건은 맛이 덜할 줄 알았는데 맛있네요! 특히 베지 까스 아주 맛있습니다. 재구매 의향 있어요ㅎㅎ</p>
         </div>
 
         <div class="review-box">
             <img id="review" src="../static/img/lotte_logo.png" />
-            <p class="bold gray">id123456</p>
-            <p>최고의 후기 뫄모마뫄뫄마</p>
-            <p>이것도 max-width정해야하는데</p>
-            <p>왜 시험기간이랑 겹친걸까ㅏㅏㅏ</p>
+            <p class="bold gray">[비건KIT] 제품명</p>
+            <p class="review-text refe gray line-small">앞으로 동물착취를 하지 않는 비건 마요네즈를 먹으려구요. 이번 기회에 새로 알게됐네요!</p>
         </div>
 
         <div class="review-box">
             <img id="review" src="../static/img/lotte_logo.png" />
-            <p class="bold gray">id123456</p>
-            <p>최고의 후기 뫄모마뫄뫄마</p>
-            <p>이것도 max-width정해야하는데</p>
-            <p>왜 시험기간이랑 겹친걸까ㅏㅏㅏ</p>
-            <p>pull이 안먹어서 테스트좀 할게요</p>
+            <p class="bold gray">[KIT] 제품명</p>
+            <p class="review-text refe gray line-small">추천제품에 나뚜루 아이스크림 뜨길래 주문해서 먹어봤는데 캐슈 바닐라 진짜 맛있습니다. 여러분 도전해보세요!</p>
         </div>
 
     </div><!-- END item -->
