@@ -10,6 +10,9 @@ def main(requests):
 def subscribe(requests):
     return render(requests, 'subscribe.html')
 
+def mbti(requests):
+    return render(requests, 'mbti.html')
+
 def subscribe2(requests):
     return render(requests, 'subscribe2.html')
 
