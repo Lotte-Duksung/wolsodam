@@ -5,31 +5,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인 페이지</title>
+    <title>제품페이지</title>
+    {% block head %}
+    <link rel='stylesheet' href='{% static "css/login.css" %}'/>
+    {% endblock head %}
 </head>
 <body>
 {% block content %}
 <br>
 <br>
 <div class="text-center">
-    <h2>로그인</h2>
+    <p id='ll'>로그인</p>
         <div class = "login-entry">
             <form method="POST" action="{%url 'login' %}">
                 {% csrf_token %}
                 <div class = "form-group">
-                    <input name="username" type="text" value="" placeholder="아이디 입력">
+                    <input id="inputC" name="username" type="text" value="" placeholder="아이디 입력">
                 </div>
                 <div class = "form-group">
-                    <input name="password" type="password" value="" placeholder="8~15자리 영문+숫자 조합">
+                    <input id="inputC" name="password" type="password" value="" placeholder="8~15자리 영문+숫자 조합">
                 </div>
-                <div class="form-group">
-                    <a href="{% url 'signup' %}">
-                        <button type="button" id='btn_signup'>
-                            회원가입
-                        </button>
-                    </a>
+                <div id="CCC" class = "form-group">
+                    <span>
+                    <input id="c" type="checkbox" name="아저" value="아저">
+                    <label for="c"></lavel>
+                    </span>
+                    <span id="ccc">&nbsp;&nbsp;아이디저장</span>
+                    <div id="ww">
+                    <span>아이디/비밀번호찾기 </span>|
+                    <a href={%url 'signup' %}>회원가입</a>
+                    </div>
                 </div>
-                <br>
                 <div class= "form-group">
                     <input type="submit" value="로그인">
                 </div>
