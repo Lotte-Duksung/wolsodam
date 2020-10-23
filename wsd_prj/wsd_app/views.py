@@ -34,6 +34,9 @@ def review(requests):
 def product(requests):
     return render(requests, 'product.html')
 
+def product_info(requests):
+    return render(requests, 'product_info.html')
+
 def login(requests):
     if requests.method == 'POST':    # POST 방식으로 들어온 지 확인
         username = requests.POST['username'] # 사용자로부터 전달 받은 유저 이름을 넣음
