@@ -156,14 +156,6 @@ body {
     color : #DA291C;
 }
 
-/*nav바 마이페이지*/
-/*#nav_mypage{
-    text-decoration: none;
-    margin-left:auto;
-    font-size: small;
-    color : #707070
-}*/
-
 /* 앵커 밑줄 삭제 */
 a {
     text-decoration: none;
@@ -193,7 +185,7 @@ li a:hover{
 }
 
 .sub-title{
-    font-size:36px;
+    font-size:33px;
     font-weight: bold;
     text-align: center;
     margin-top: 57px;
@@ -209,7 +201,7 @@ li a:hover{
     height: 60px;
     border-radius: 30px;
     background-color: #DA291C;
-    margin:40px 692px;
+    margin:0px 692px 276px 692px;
 }
 .next a{
     font-size:24px;
@@ -236,6 +228,7 @@ li a:hover{
     background: #DAB99C;
     margin-top:80px;
     padding-left:138px;
+    margin-bottom: 189px;
 }
 .yesorno{
     width: 812px;
@@ -248,7 +241,45 @@ li a:hover{
 }
 /*mbti 결과창 페이지*/
 .mbti-box{
-    height: 264px;
+    background: #DAB99C;
+    padding: 49px 665px 30px 49px;
+}
+#mbti-mini-line{
+    width: 59px;
+    height: 11px;
+    background-color: #AA7357;
+    border:0px;
+    margin:0px;
+}
+#mbti-mini-text{
+    font-size: 23px;
+    margin-bottom:0px;
+    margin-top: 5px;
+}
+#mbti-big{
+    text-align: left;
+    font-size:98px;
+    font-weight: bold;
+    letter-spacing: 1.96px;
+    color: #FFFFFF;
+    margin:0px;
+}
+.mbti{
+    margin:40px 416px 121px 416px;
+    display: flex;
+}
+.mbti-mini{
+    justify-content: center;
+}
+#mbti-ex{
+    width: 506px;
+    height: 48px;
+    background-color: #F8F8F8;
+    margin-right: 16px;
+    margin-bottom: 18px;
+    color:#54585A;
+    line-height: 48px;
+    padding-left: 30px;
 }
 /*구독 페이지 2 --> 구독페이지4로 변경*/
 
@@ -534,6 +565,85 @@ input[id="cb1"]:checked + label {
 input[id="cb1"] {
 	display: none;
 }
+
+input[id="cb2"] + label {
+    display: inline-block;
+	width: 15px;
+    height: 15px;
+    border: 2px solid #AA7357;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[id="cb2"]:checked + label {
+	background-color: #AA7357;
+}
+input[id="cb2"] {
+	display: none;
+}
+/*휴대폰라디오버튼*/
+input[id="cb3"] + label {
+    display: inline-block;
+	width: 15px;
+    height: 15px;
+    border: 1px solid #54585A;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+input[id="cb3"]:checked + label {
+	background-color:#DA291C;
+}
+input[id="cb3"] {
+	display: none;
+}
+/*계좌이체라디오버튼*/
+input[id="cb4"] + label {
+    display: inline-block;
+	width: 15px;
+    height: 15px;
+    border: 1px solid #54585A;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+input[id="cb4"]:checked + label {
+	background-color:#DA291C;
+}
+input[id="cb4"] {
+	display: none;
+}
+/*무통장입금라디오버튼*/
+input[id="cb5"] + label {
+    display: inline-block;
+	width: 15px;
+    height: 15px;
+    border: 1px solid #54585A;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+input[id="cb5"]:checked + label {
+	background-color:#DA291C;
+}
+input[id="cb5"] {
+	display: none;
+}
+/*신용카드라디오버튼*/
+input[id="cb6"] + label {
+    display: inline-block;
+	width: 15px;
+    height: 15px;
+    border: 1px solid #54585A;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+input[id="cb6"]:checked + label {
+	background-color:#DA291C;
+}
+input[id="cb6"] {
+	display: none;
+}
 /*체크박스끄읏*/
 #img{
     width: 122px;
@@ -550,6 +660,7 @@ input[id="cb1"] {
 .kit-info{
     margin-left: 22px;
     margin-top: 115px;
+    width: 264px;
 }
 /*수량버튼*/
 .many{
@@ -562,8 +673,16 @@ input[id="cb1"] {
     background: #AA7357;
     border-radius: 5px;
 }
-
+#howmany{
+    border:0px;
+    text-align: center;
+    font-size:19px;
+}
 /*수량버튼끝*/
+.kit-price{
+    margin-left: 75px;
+    margin-top: 115px;
+}
 .delivery-page{
     margin:0 auto;
 }
@@ -649,7 +768,7 @@ input[id="cb1"] {
 }
 
 .delivery-price{
-    height: 613px;  
+    height: 520px;  
     background-color: #F8F8F8;
     margin-top: 18px;
     padding:55px;
@@ -671,18 +790,50 @@ input[id="cb1"] {
     border-radius: 30px;
     opacity: 1;
     text-align: center;
+    margin-top: 69px;
 }
 .order a{
     font-size:24px;
     color: white;
     line-height: 60px; 
 }
-#checkbox{
-    margin-top:67px;
-    margin-bottom:91px;
+.sub-bottom2{
+    display: flex;
+    justify-content: center;
 }
-
-
+.go-home{
+    width: 285px;
+    height: 60px;
+    background: #DAB99C;
+    border-radius: 30px;
+    line-height: 60px;
+    color: #54585A;
+    font-size:23px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 30px;
+}
+.go-home a{
+    text-decoration: none;
+    color:#54585A;
+}
+.go-product{
+    width: 285px;
+    height: 60px;
+    background: #DA291C;
+    border-radius: 30px;
+    line-height: 60px;
+    color: #FFFFFF;
+    font-size:23px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 162px;
+}
+.go-product a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
 /*PRODUCT PAGE*/
 .product-box{
     margin:0 auto;

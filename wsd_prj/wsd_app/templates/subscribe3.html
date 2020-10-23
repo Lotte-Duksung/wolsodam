@@ -30,7 +30,7 @@
                         <input type="checkbox" id="cb1">
                         <label for="cb1"></label>
                         <div id="img"><img id="inside-img" src='{% static "img/wolsodam_2.png" %}' alt="img"></div>
-                        <div class ="kit-info"><p id="item-name">주문한 키트이름 넣어주세요</p><p style="font-size:19px;margin:0px;">00,000원</p></div>
+                        <div class ="kit-info"><p id="item-name">비건kit</p><p style="font-size:19px;margin:0px;">00,000원</p></div>
                         <div class="many">
                             <form name="form" method="get">
                                 <input type="button" value=" - " onclick="del();" id="mpbutton">
@@ -38,7 +38,8 @@
                                 <input type=hidden name="sell_price" value="5500">
                                 <input type="button" value=" + " onclick="add();" id="mpbutton"><br>
                             </form>
-                        </div>            
+                        </div>      
+                        <div class ="kit-price"><p id="item-name">00,000원</p></div>      
                     </div>
                 </div>
             </div>
@@ -66,10 +67,10 @@
                         <hr id="delivery-red-line">
                     </div>
                     <div class = "delivery-box2">
-                        <label id="twenty-bold">휴대폰<input type="radio" checked=""></input></label>
-                        <label id="twenty-bold">계좌이체<input type="radio" checked=""></input></label>
-                        <label id="twenty-bold">무통장입금<input type="radio" checked=""></input></label>
-                        <label id="twenty-bold">신용카드<input type="radio" checked=""></input></label>
+                        <label id="twenty-bold">휴대폰<input type="checkbox" id="cb3"></input><label for="cb3"></label></label>
+                        <label id="twenty-bold">계좌이체<input type="checkbox" id="cb4"></input><label for="cb4"></label></label>
+                        <label id="twenty-bold">무통장입금<input type="checkbox" id="cb5"></input><label for="cb5"></label></label>
+                        <label id="twenty-bold">신용카드<input type="checkbox" id="cb6" checked=""></input><label for="cb6"></label></label>
                     </div>
                     <div class="delivery-box2">
                         <p class="card" id="twenty-bold">신용카드</p>
@@ -79,10 +80,16 @@
                         <select id="card-sort">
                             <option selected>하나</option>
                             <option>신한</option>
+                            <option>농협</option>
+                            <option>카카오페이</option>
+                            <option>국민</option>
+                            <option>롯데</option>
                         </select>
                         <select id="installment">
                             <option selected>일시불</option>
                             <option>6개월</option>
+                            <option>12개월</option>
+                            <option>24개월</option>
                         </select>
                     </div>
                 </div>
@@ -102,11 +109,10 @@
                                 <hr style="width: 460px;border: 1px solid #AA7357;">
                             </div>
                             <div class="delivery-price-box">
-                                <div id="twentythree-bold">최종 결제 금액</div>       
-                                금액 : <input type="text" name="sum" size="11" readonly>원                         
+                                <div id="twentythree-bold">최종 결제 금액</div>                           
                                 <div id="twentythree-bold">00,000원</div>
                             </div>
-                            <p style="font-size:16px;color:#54585A;text-align:center;"><input type="checkbox" id="checkbox">위 상품의 구매 조건 확인 및 결제 진행에 동의합니다.</input></p>
+                            <p style="font-size:16px;color:#54585A;text-align:center;"><input type="checkbox" id="cb2"><label for="cb2"></label></input>　위 상품의 구매 조건 확인 및 결제 진행에 동의합니다.</p>
                             <div class="order-box">
                                 <div class="order"><a href="{% url 'subscribe4' %}">결제하기</a></div>
                             </div>
