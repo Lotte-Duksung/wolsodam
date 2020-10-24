@@ -147,15 +147,12 @@ p { font-size: 23px; }
 }
 
 .best-review {
-    padding : 8px auto;
-    border-bottom: 2px solid #DA291C;
+    padding : 8px 40px;
+    border-bottom: 3px solid #DA291C;
 }
 
-#review { 
-    width: 395px; height: 374px;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 15px;
-    margin-bottom: 20px;
+.review-box {
+    width : 395px;
 }
 
 .review {
