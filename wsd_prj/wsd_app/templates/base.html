@@ -9,13 +9,10 @@
     {% endblock head %}
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='{% static "css/nav.css" %}'/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico'%}">
 </head>
 
-<!-- favicon.ico 404 (Not Found) -->
-<link rel="icon" href="data:;base64,iVBORw0KGgo=">
-
 <body>
-<!-- navvar -->
 <nav id="navbar">
        <a  href="{% url 'main' %}"><img id="logo_img" src='{% static "img/mainlogo.png" %}' alt="logo"></a>
         <a id="logo_text" href="{% url 'main' %}"></a>
@@ -29,8 +26,7 @@
         <li><a id="li_github" href="https://github.com/Lotte-Duksung/wolsodam">GitHub</a></li>
     </ul>
 
-    {% if request.user.is_authenticated %}  <!-- 만약 로그인이 되어있는 상태이면-->
-
+    {% if request.user.is_authenticated %}  
         <a id="nav_log" href="{% url 'mypage' %}"><span style="color: #AA7357;">{{user.last_name}}{{ user.first_name }}</span>님</a>
         <a id="nav_logout" href="javascript:{document.getElementById('logout').submit()}">
             로그아웃
@@ -39,21 +35,19 @@
                   {% csrf_token %} <input type="hidden" />
               </form>
 
-    {% else %}  <!-- 로그인이 되어있지 않다면 -->
+    {% else %}  
         <a id="nav_log" href="{% url 'login' %}">로그인</a>
     {% endif %}
 
 </nav>
-<!-- end navvar -->
 
-<!-- content -->
+
+
 <div id="content">
 {% block content %}
 {% endblock content %}
 </div>
-<!-- end content -->
 
-<!-- footer -->
 <div id="footer">
     <div id="footer-head">
     이용약관&nbsp;&nbsp;&nbsp;&nbsp;|
@@ -70,7 +64,6 @@
     </div>
     </div>
 </div>
-<!-- end footer -->
 
 <script>
     let introduce = document.getElementById("li_introduce");

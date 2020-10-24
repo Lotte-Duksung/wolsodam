@@ -10,7 +10,7 @@
     <div style="font-size:33px; font-weight:bold; margin-bottom:56px;">가입 완료</div>
     <img src='{% static "img/wolsodam_2.png" %}'>
 
-    {% if request.user.is_authenticated %}  <!-- 만약 로그인이 되어있는 상태이면-->
+    {% if request.user.is_authenticated %}
             <div class="con"> <span style="color:#AA7357">{{ user.username }}</span>님</div>
             <div class="con" style="margin-bottom:66px"> <span style="color:#DA291C">롯데 월소담</span> 가입을 축하드립니다:)</div>
     {% endif%}
