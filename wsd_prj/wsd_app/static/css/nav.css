@@ -244,50 +244,6 @@ li a:hover{
     margin-bottom: 11px;
 }
 
-.yesorno
-
-/*mbti 결과창 페이지*/
-.mbti-box{
-    background: #DAB99C;
-    padding: 49px 665px 30px 49px;
-}
-#mbti-mini-line{
-    width: 59px;
-    height: 11px;
-    background-color: #AA7357;
-    border:0px;
-    margin:0px;
-}
-#mbti-mini-text{
-    font-size: 23px;
-    margin-bottom:0px;
-    margin-top: 5px;
-}
-#mbti-big{
-    text-align: left;
-    font-size:98px;
-    font-weight: bold;
-    letter-spacing: 1.96px;
-    color: #FFFFFF;
-    margin:0px;
-}
-.mbti{
-    margin:40px 416px 121px 416px;
-    display: flex;
-}
-.mbti-mini{
-    justify-content: center;
-}
-#mbti-ex{
-    width: 506px;
-    height: 48px;
-    background-color: #F8F8F8;
-    margin-right: 16px;
-    margin-bottom: 18px;
-    color:#54585A;
-    line-height: 48px;
-    padding-left: 30px;
-}
 /*구독 페이지 2 --> 구독페이지4로 변경*/
 
 .sub-page4{
@@ -965,4 +921,53 @@ input[id="cb6"] {
     height: 108px;
 }
 
+/*mbti result css*/
 
+.result-box{
+    background: #DAB99C;
+    margin:238px 416px 0px 416px;
+}
+#result{
+    padding: 49px 650px 30px 49px;
+}
+#result1, #result2, #result3, #result4, #result5{
+    text-align: left;
+    font-size:98px;
+    font-weight: bold;
+    letter-spacing: 1.96px;
+    color: #FFFFFF;
+    margin:0px;
+}
+
+/*mbti 결과창 페이지*/
+
+#mbti-mini-line{
+    width: 59px;
+    height: 11px;
+    background-color: #AA7357;
+    border:0px;
+    margin:0px;
+}
+#mbti-mini-text{
+    font-size: 23px;
+    margin-bottom:0px;
+    margin-top: 5px;
+}
+
+.mbti{
+    margin:40px 416px 121px 416px;
+    display: flex;
+}
+.mbti-mini{
+    justify-content: center;
+}
+#mbti-ex{
+    width: 506px;
+    height: 48px;
+    background-color: #F8F8F8;
+    margin-right: 16px;
+    margin-bottom: 18px;
+    color:#54585A;
+    line-height: 48px;
+    padding-left: 30px;
+}

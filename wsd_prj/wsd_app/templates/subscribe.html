@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>구독페이지</title>
-    
+    <style>
+        *:focus { outline:none; }
+    </style>
 </head>
 <body>
 {% block content %}
@@ -31,8 +33,8 @@
                     <div>
                         <p id="ques-white">나는 평소 고기보다 채식 위주의 식사를 즐긴다 🥗</p>
 
-                        <div class="yesorno"><button id="vegetable" onclick="printName('v');" value="V"><p id="ques-white">네!</p></button></div>
-                        <div class="yesorno"><button id="meat" onclick="printName('m');" value="M"><p id="ques-white">아니오!</p></button></div>
+                        <div ><button class="yesorno" id="vegetable" onclick="printName('v');" value="V"><p id="ques-white">네!</p></button></div>
+                        <div ><button class="yesorno" id="meat" onclick="printName('m');" value="M"><p id="ques-white">아니오!</p></button></div>
                     </div>
 
                 </div>
@@ -67,15 +69,40 @@
                 </div>
             </div>
         </div>
-        <div id='result'><span id='result1'></span><span id='result2'></span><span id='result3'></span><span id='result4'></span></div>
+        
         <div class="sub-bottom">
-            <div class="next"><a href="{% url 'mbti' %}">결과보기</a></div>
+            <div class="next"><a href="#" onclick="showhide();">결과보기</a></div>
+        </div>
+        <div id="mbtiboxl" style="display:block;">
+            <div class="result-box">
+                <div id='result'>
+                    <hr id="mbti-mini-line"></hr>
+                    <p id="mbti-mini-text">당신의 입맛은</p>
+                    <span id='result1'></span><span id='result2'></span><span id='result3'></span><span id='result4'></span><span id='result5'>형</span>
+                </div>
+            </div>
+            <div class="mbti">
+                <div class="mbti-mini">
+                    <div id = "mbti-ex">M : Meat / V : Vegetable</div><div id = "mbti-ex">A : Adult / C : Children</div>
+                </div>
+                <div class="mbti-mini">
+                    <div id = "mbti-ex">H : Hot / S : Sweet</div><div id = "mbti-ex">A: Allergy / N : Non-Allergy</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <script type=text/javascript>
-     function printName(e)  {
+
+    function showhide(mbtiboxl){
+        var mbtir = document.getElementById(mbtiboxl);
+        if(mbtir.style.display=="block"){
+            mbtir.style.display="none";
+        }else{mbtir.style.display = "block";}
+    }
+
+    function printName(e)  {
         var gubun = e;
         
         let name1;
