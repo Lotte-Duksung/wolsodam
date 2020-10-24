@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>구독페이지</title>
-    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 </head>
 <body>
 {% block content %}
@@ -27,51 +27,38 @@
                     <p id="title-color-bold">나는 어떤 입맛일까?</p>
                 </div>
 
-                <form action="mbti.html" method="POST">
                 <div class="ques-box">
                     <img id="ques" src="../static/img/ques1.png" />
-                    <form name="exf1">
+                    <div>
                         <p id="ques-white">나는 평소 고기보다 채식 위주의 식사를 즐긴다 🥗</p>
-
-                        <div class="yesorno"><button id="vegetable" onclick="printName('v');" value="V"><p id="ques-white">네!</p></button></div>
-                        <div class="yesorno"><button id="meat" onclick="printName('m');" value="M"><p id="ques-white">아니오!</p></button></div>
+                        <div class="yesorno"><button class="sel-btn" id="vegetable" onclick="printName('v');" value="V"><img id="yes-btn1" onclick="changeImage('yes')" src="{% static 'img/yes-red.png'%}"></button>                        </div>
+                        <div class="yesorno"><button class="sel-btn" id="meat" onclick="printName('m');" value="M"><img id="no-btn1" onclick="changeImage('no')" src="{% static 'img/no-red.png'%}"></button>                        </div>
                     </div>
-
                 </div>
                 <div class="ques-box">
                     <img id="ques" src="../static/img/ques2.png" />
                     <div>
                         <p id="ques-white">나는 매운 맛의 화끈함을 즐긴다 🔥</p>
-
-                        <div class="yesorno"><button id="hot" onclick="printName2('h');" value="H"><p id="ques-white">네!</p></button></div>
-                        <div class="yesorno"><button id="sweet" onclick="printName2('s');" value="S"><p id="ques-white">아니오!</p></button></div>
-
+                        <div class="yesorno"><button class="sel-btn" id="hot" onclick="printName2('h');" value="H"><img id="yes-btn2" onclick="changeImage('yes2')" class="btn-img" src="{% static 'img/yes-red.png'%}"></button></div>
+                        <div class="yesorno"><button class="sel-btn" id="sweet" onclick="printName2('s');" value="S"><img id="no-btn2" onclick="changeImage('no2')" class="btn-img" src="{% static 'img/no-red.png'%}"></button></div>
                     </div>
                 </div>
                 <div class="ques-box">
                     <img id="ques" src="../static/img/ques3.png" />
                     <div>
                         <p id="ques-white">나는 주위 사람에게 아기 입맛이라는 이야기를 듣는다 👶</p>
-                        <div class="yesorno"><button id="children" onclick="printName3('c');" value="C"><p id="ques-white">네!</p></button></div>
-                        <div class="yesorno"><button id="adult" onclick="printName3('a');" value="A"><p id="ques-white">아니오!</p></button></div>
-
+                        <div class="yesorno"><button class="sel-btn" id="children" onclick="printName3('c');" value="C"><img id="yes-btn3" onclick="changeImage('yes3')" class="btn-img" src="{% static 'img/yes-red.png'%}"></button></div>
+                        <div class="yesorno"><button class="sel-btn" id="adult" onclick="printName3('a');" value="A"><img id="no-btn3" onclick="changeImage('no3')" class="btn-img" src="{% static 'img/no-red.png'%}"></button></div>
                     </div>
                 </div>
                 <div class="ques-box">
                     <img id="ques" src="../static/img/ques4.png" />
                     <div>
                         <p id="ques-white">나는 어떤 음식이든 몸이 잘 받아들인다 👍</p>
-
-                        <div class="yesorno"><button id="nonallergy" onclick="printName4('n');" value="N"><p id="ques-white">네!</p></button></div>
-                        <div class="yesorno"><button id="allergy" onclick="printName4('al');" value="A"><p id="ques-white">아니오!</p></button></div>
-
+                        <div class="yesorno"><button class="sel-btn" id="nonallergy" onclick="printName4('n');" value="N"><img id="yes-btn4" onclick="changeImage('yes4')" class="btn-img" src="{% static 'img/yes-red.png'%}"></button></div>
+                        <div class="yesorno"><button class="sel-btn" id="allergy" onclick="printName4('al');" value="A"><img id="no-btn4" onclick="changeImage('no4')" class="btn-img" src="{% static 'img/no-red.png'%}"></button></div>
                     </div>
                 </div>
-
-                <div class="sub-bottom">
-                    <div class="next"><input type="button" onclick="location.href='mbti'">결과보기</a></div>
-                </div>
-                </form>
             </div>
         </div>
         <div id='result'><span id='result1'></span><span id='result2'></span><span id='result3'></span><span id='result4'></span></div>
@@ -82,6 +69,20 @@
 </div>
 
 <script type=text/javascript>
+
+    function printName(e)  {
+        var gubun = e;
+        
+        let name1;
+
+        if (gubun=="v"){
+            name1 = document.getElementById("vegetable").value;
+        }else if(gubun=="m"){
+            name1 = document.getElementById("meat").value;
+        }
+
+        document.getElementById('result1').innerText = name1;
+    }
 
     function printName2(e)  {
         var gubun = e;
@@ -122,10 +123,89 @@
         document.getElementById('result4').innerText = name4; 
     }
 
+    var state = 0;
+
+    function changeImage(k) {
+        var ans = k
+        if (ans=='yes'){
+            if (state == 0) {
+                state = 1;
+                document.getElementById('yes-btn1').src = "{% static 'img/yes-dark.png' %}";
+            }else {
+                state = 0;
+                document.getElementById('yes-btn1').src = "{% static 'img/yes-red.png' %}";
+            }
+        }else if (ans=='no') {
+            if (state == 0) {
+                state =1;
+                document.getElementById('no-btn1').src = "{% static 'img/no-dark.png' %}";
+            }else {
+                state = 0;
+                document.getElementById('no-btn1').src = "{% static 'img/no-red.png' %}";
+            }
+            ans=='';
+        }
+        else if (ans=='yes2'){
+            if (state == 0) {
+                state = 1;
+                document.getElementById('yes-btn2').src = "{% static 'img/yes-dark.png' %}";
+            }else {
+                state = 0;
+                document.getElementById('yes-btn2').src = "{% static 'img/yes-red.png' %}";
+            }
+
+        }else if (ans=='no2') {
+            if (state == 0) {
+                state =1;
+                document.getElementById('no-btn2').src = "{% static 'img/no-dark.png' %}";
+            }else {
+                state = 0;
+                document.getElementById('no-btn2').src = "{% static 'img/no-red.png' %}";
+            }
+
+        }
+        else if (ans=='yes3'){
+            if (state == 0) {
+                state = 1;
+                document.getElementById('yes-btn3').src = "{% static 'img/yes-dark.png' %}";
+            }else {
+                state = 0;
+                document.getElementById('yes-btn3').src = "{% static 'img/yes-red.png' %}";
+            }
+
+        }else if (ans=='no3') {
+            if (state == 0) {
+                state =1;
+                document.getElementById('no-btn3').src = "{% static 'img/no-dark.png' %}";
+            }else {
+                state = 0;
+                document.getElementById('no-btn3').src = "{% static 'img/no-red.png' %}";
+            }
+
+        }
+        else if (ans=='yes4'){
+            if (state == 0) {
+                state = 1;
+                document.getElementById('yes-btn4').src = "{% static 'img/yes-dark.png' %}";
+            }else {
+                state = 0;
+                document.getElementById('yes-btn4').src = "{% static 'img/yes-red.png' %}";
+            }
+
+        }else if (ans=='no4'){
+            if (state == 0) {
+                state =1;
+                document.getElementById('no-btn4').src = "{% static 'img/no-dark.png' %}";
+            }else {
+                state = 0;
+                document.getElementById('no-btn4').src = "{% static 'img/no-red.png' %}";
+            }
+
+        }
+    }
+
 </script>
-<script>
-    
-</script>
+
 {% endblock content %}  
 </body>
 </html>
