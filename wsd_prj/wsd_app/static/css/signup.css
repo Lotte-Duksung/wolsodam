@@ -1,5 +1,6 @@
 .text-center{
     text-align: center;
+    height:800px;
 }
 
 #t{
@@ -33,4 +34,32 @@ input[type="submit"]{
     border : 0;
     border-radius: 30px;
     font-weight: bold;
+}
+
+.con{
+    font-size: 43px;
+    font-weight: bold;
+}
+
+#go_main{
+    background-color: #DAB99C;
+    border: 0;
+    border-radius: 30px;
+    width: 285px;
+    height: 60px;
+    font-size: 23px;
+    color:#54585A;
+    font-weight: bold;
+}
+
+#go_subscribe{
+    background-color: #DA291C;
+    border: 0;
+    border-radius: 30px;
+    width: 285px;
+    height: 60px;
+    font-size: 23px;
+    color:#FFFFFF;
+    font-weight: bold;
+    margin-left: 60px;
 }
