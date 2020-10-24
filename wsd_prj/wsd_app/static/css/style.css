@@ -226,6 +226,73 @@ td {
 }
 
 
+
+/**product info**/
+
+.product-info{
+    background-color: #F8F8F8;
+    padding-top: 105px;
+    padding-bottom: 84px;
+}
+
+.product-wrapper {
+    max-width: 1356px; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info-header {
+    display: flex;
+    max-width: 1356px; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.product-img {
+    width: 366px; height: 366px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 15px;
+    margin-right: 122px;
+}
+
+.info-area {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 36px;
+    line-height: 70px;
+}
+
+.info-list {
+    max-width: 190px; width: 100%
+}
+
+.pro-list-ex {
+    width: 460px;
+}
+
+.buy-btn {
+    padding: 13px 85px;
+    width: 252px; height: 58px;
+}
+
+
+.buy-btn-box {
+    text-align: center;
+    margin : 193px auto 138px;
+}
+
+.buy-btn-big {
+    padding: 13px 225px;
+    width: 536px; height: 60px;
+    margin: 0 auto;
+}
+
+.product-categori {
+    background-color: white;
+    margin-top: 84px;
+    padding-top: 90px;
+}
+
 .qna-page {
     margin: 20px auto;
     text-align: center;
