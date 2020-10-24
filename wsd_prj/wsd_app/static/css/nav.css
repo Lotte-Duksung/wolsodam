@@ -213,23 +213,29 @@ li a:hover{
     width: 1088px;
 }
 .ques-box{
+    max-width: 90%;
+    width: 90%;
     height: 435px;
     background: #DAB99C;
-    margin-top:80px;
-    padding-left:138px;
+    margin-top: 80px;
+    padding-left: 138px;
     margin-bottom: 189px;
 }
 .yesorno{
     width: 812px;
     height: 59px;
     border-radius: 30px;
-    background-color: #DA291C;
-    color:#FFFFFF;
     line-height: 0px;
     text-align: center;
     border:0px;
     margin-top: 11px;
     margin-bottom: 11px;
+}
+.sel-btn {
+    outline: none;
+    border: 0;
+    background: none;
+    width: auto;
 }
 
 .yesorno
