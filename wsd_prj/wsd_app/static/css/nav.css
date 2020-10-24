@@ -195,6 +195,7 @@ li a:hover{
 }
 .next a{
     font-size:24px;
+    font-weight: bold;
     color: white;
     line-height: 60px; 
 }
@@ -238,53 +239,7 @@ li a:hover{
     width: auto;
 }
 
-<<<<<<< HEAD
 /*구독 페이지 2 --> 구독페이지4로 변경*/
-=======
-.yesorno
-
-.mbti-box{
-    background: #DAB99C;
-    padding: 49px 665px 30px 49px;
-}
-#mbti-mini-line{
-    width: 59px;
-    height: 11px;
-    background-color: #AA7357;
-    border:0px;
-    margin:0px;
-}
-#mbti-mini-text{
-    font-size: 23px;
-    margin-bottom:0px;
-    margin-top: 5px;
-}
-#mbti-big{
-    text-align: left;
-    font-size:98px;
-    font-weight: bold;
-    letter-spacing: 1.96px;
-    color: #FFFFFF;
-    margin:0px;
-}
-.mbti{
-    margin:40px 416px 121px 416px;
-    display: flex;
-}
-.mbti-mini{
-    justify-content: center;
-}
-#mbti-ex{
-    width: 506px;
-    height: 48px;
-    background-color: #F8F8F8;
-    margin-right: 16px;
-    margin-bottom: 18px;
-    color:#54585A;
-    line-height: 48px;
-    padding-left: 30px;
-}
->>>>>>> 8ef3cdd08e69ebd9c02eaf0b571981c26049325e
 
 .sub-page4{
     margin:91px 140px;
