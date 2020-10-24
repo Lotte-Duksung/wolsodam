@@ -237,8 +237,11 @@ li a:hover{
     border-radius: 30px;
     background-color: #DA291C;
     color:#FFFFFF;
-    line-height: 59px;
+    line-height: 0px;
     text-align: center;
+    border:0px;
+    margin-top: 11px;
+    margin-bottom: 11px;
 }
 /*mbti 결과창 페이지*/
 .mbti-box{
