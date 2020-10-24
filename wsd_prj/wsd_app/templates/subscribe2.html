@@ -176,6 +176,17 @@
         
     </header>
 </div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 400);
+    });
+</script>
+
 {% endblock content %}  
 </body>
 </html>
