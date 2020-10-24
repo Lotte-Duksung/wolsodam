@@ -27,34 +27,34 @@
                 </div>
                 <div class="ques-box">
                     <img id="ques" src="../static/img/ques1.png" />
-                    <div>
+                    <form name="exf1">
                         <p id="ques-white">나는 평소 고기보다 채식 위주의 식사를 즐긴다 🥗</p>
-                        <div class="yesorno"><a id="vegetable" onclick="mc()"><p id="ques-white">네!</p></a></div>
-                        <div class="yesorno"><a id="meat"><p id="ques-white">아니오!</p></a></div>
-                    </div>
+                        <button class="yesorno" value="vegetable" name="" onclick="mc('0')"><p id="ques-white">네!</p></button>
+                        <button class="yesorno" value="meat"><p id="ques-white">아니오!</p></button>
+                    </form>
                 </div>
                 <div class="ques-box">
                     <img id="ques" src="../static/img/ques2.png" />
                     <div>
                         <p id="ques-white">나는 매운 맛의 화끈함을 즐긴다 🔥</p>
-                        <div class="yesorno"><a id="hot"><p id="ques-white">네!</p></a></div>
-                        <div class="yesorno"><a id="sweet"><p id="ques-white">아니오!</p></a></div>
+                        <button class="yesorno" value="hot"><p id="ques-white">네!</p></button>
+                        <button class="yesorno" value="sweet"><p id="ques-white">아니오!</p></button>
                     </div>
                 </div>
                 <div class="ques-box">
                     <img id="ques" src="../static/img/ques3.png" />
                     <div>
                         <p id="ques-white">나는 주위 사람에게 아기 입맛이라는 이야기를 듣는다 👶</p>
-                        <div class="yesorno"><a id="children"><p id="ques-white">네!</p></a></div>
-                        <div class="yesorno"><a id="adult"><p id="ques-white">아니오!</p></a></div>
+                        <button class="yesorno" value"children"><p id="ques-white">네!</p></button>
+                        <button class="yesorno" value="adult"><p id="ques-white">아니오!</p></button>
                     </div>
                 </div>
                 <div class="ques-box">
                     <img id="ques" src="../static/img/ques4.png" />
                     <div>
                         <p id="ques-white">나는 어떤 음식이든 몸이 잘 받아들인다 👍</p>
-                        <div class="yesorno"><a id="nonallergy"><p id="ques-white">네!</p></a></div>
-                        <div class="yesorno"><a id="allergy"><p id="ques-white">아니오!</p></a></div>
+                        <button class="yesorno" value="nonallergy"><p id="ques-white">네!</p></button>
+                        <button class="yesorno" value="allergy"><p id="ques-white">아니오!</p></button>
                     </div>
                 </div>
             </div>
@@ -64,12 +64,8 @@
         </div>
     </div>
 </div>
-<script>
 
-    function mc(){
-        var M
-        M = document.getElementById("vegetable");
-    }
+<script type=text/javascript>
 
 </script>
 {% endblock content %}  
