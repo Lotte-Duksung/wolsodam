@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>구독페이지</title>
+    
 </head>
 <body>
 {% block content %}
@@ -29,36 +30,44 @@
                     <img id="ques" src="../static/img/ques1.png" />
                     <form name="exf1">
                         <p id="ques-white">나는 평소 고기보다 채식 위주의 식사를 즐긴다 🥗</p>
-                        <button class="yesorno" value="vegetable" name="" onclick="mc('0')"><p id="ques-white">네!</p></button>
-                        <button class="yesorno" value="meat"><p id="ques-white">아니오!</p></button>
-                    </form>
+
+                        <div class="yesorno"><button id="vegetable" onclick="printName('v');" value="V"><p id="ques-white">네!</p></button></div>
+                        <div class="yesorno"><button id="meat" onclick="printName('m');" value="M"><p id="ques-white">아니오!</p></button></div>
+                    </div>
+
                 </div>
                 <div class="ques-box">
                     <img id="ques" src="../static/img/ques2.png" />
                     <div>
                         <p id="ques-white">나는 매운 맛의 화끈함을 즐긴다 🔥</p>
-                        <button class="yesorno" value="hot"><p id="ques-white">네!</p></button>
-                        <button class="yesorno" value="sweet"><p id="ques-white">아니오!</p></button>
+
+                        <div class="yesorno"><button id="hot" onclick="printName2('h');" value="H"><p id="ques-white">네!</p></button></div>
+                        <div class="yesorno"><button id="sweet" onclick="printName2('s');" value="S"><p id="ques-white">아니오!</p></button></div>
+
                     </div>
                 </div>
                 <div class="ques-box">
                     <img id="ques" src="../static/img/ques3.png" />
                     <div>
                         <p id="ques-white">나는 주위 사람에게 아기 입맛이라는 이야기를 듣는다 👶</p>
-                        <button class="yesorno" value"children"><p id="ques-white">네!</p></button>
-                        <button class="yesorno" value="adult"><p id="ques-white">아니오!</p></button>
+                        <div class="yesorno"><button id="children" onclick="printName3('c');" value="C"><p id="ques-white">네!</p></button></div>
+                        <div class="yesorno"><button id="adult" onclick="printName3('a');" value="A"><p id="ques-white">아니오!</p></button></div>
+
                     </div>
                 </div>
                 <div class="ques-box">
                     <img id="ques" src="../static/img/ques4.png" />
                     <div>
                         <p id="ques-white">나는 어떤 음식이든 몸이 잘 받아들인다 👍</p>
-                        <button class="yesorno" value="nonallergy"><p id="ques-white">네!</p></button>
-                        <button class="yesorno" value="allergy"><p id="ques-white">아니오!</p></button>
+
+                        <div class="yesorno"><button id="nonallergy" onclick="printName4('n');" value="N"><p id="ques-white">네!</p></button></div>
+                        <div class="yesorno"><button id="allergy" onclick="printName4('al');" value="A"><p id="ques-white">아니오!</p></button></div>
+
                     </div>
                 </div>
             </div>
         </div>
+        <div id='result'><span id='result1'></span><span id='result2'></span><span id='result3'></span><span id='result4'></span></div>
         <div class="sub-bottom">
             <div class="next"><a href="{% url 'mbti' %}">결과보기</a></div>
         </div>
@@ -67,6 +76,48 @@
 
 <script type=text/javascript>
 
+    function printName2(e)  {
+        var gubun = e;
+        let name2;
+
+        if (gubun=="h"){
+            name2 = document.getElementById("hot").value;
+        }else if(gubun=="s"){
+            name2 = document.getElementById("sweet").value;
+        }
+
+        document.getElementById('result2').innerText = name2; 
+    }
+
+    function printName3(e)  {
+        var gubun = e;
+        let name3;
+
+        if (gubun=="c"){
+            name3 = document.getElementById("children").value;
+        }else if(gubun=="a"){
+            name3 = document.getElementById("adult").value;
+        }
+
+        document.getElementById('result3').innerText = name3; 
+    }
+
+    function printName4(e)  {
+        var gubun = e;
+        let name4;
+
+        if (gubun=="n"){
+            name4 = document.getElementById("nonallergy").value;
+        }else if(gubun=="al"){
+            name4 = document.getElementById("allergy").value;
+        }
+
+        document.getElementById('result4').innerText = name4; 
+    }
+
+</script>
+<script>
+    
 </script>
 {% endblock content %}  
 </body>
