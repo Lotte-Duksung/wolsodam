@@ -49,6 +49,7 @@ p { font-size: 23px; }
 
 /*line-height*/
 .line { line-height: 55px; }
+.line-middle { line-height: 45px;}
 .line-small { line-height: 35px;}
 
 /*bold*/
@@ -226,7 +227,6 @@ td {
 }
 
 
-
 /**product info**/
 
 .product-info{
@@ -293,6 +293,33 @@ td {
     padding-top: 90px;
 }
 
+
+.text-box {
+    margin-bottom: 53px;
+}
+
+.nutrition {
+    display: block;
+    width: 698px; height: 240px; 
+    margin: 138px auto 95px;
+}
+.table {
+    display: block;
+    width: 698px; height: 646px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .qna-page {
     margin: 20px auto;
     text-align: center;
@@ -319,4 +346,3 @@ td {
     text-align : left;
     padding-top: 2rem;
 }
-

@@ -43,16 +43,30 @@
     <div class="sub-page2 product-categori">
         <div class = " product-wrapper">
             <!--//////////////////////////////////////////-->
-                <div>  
+                <div>
                     <div class="post-menu">
                         <a id="comp" href="#comp">제품 소개</a>
                         <a href="#intro">조리법</a>
                         <a href="#price">영양 정보</a>
                     </div>
                     <div class="post-box">
-                        <div class="post-box1">
-                            
-                             
+                        <div class="post-box1 line-middle">
+                            <div class="text-box">
+                                <p class="refe bold">1. 고기없이 맛있게</p>
+                                <p class="refe gray">콩 단백질로 빚어 구운 식물성 함박과 식물성 소스</p>
+                            </div>
+                            <div class="text-box">
+                                <p class="refe bold">2. 콜레스트롤 ZERO</p>
+                                <p class="refe gray">콜레스테롤 0%로 몸도 마음도 가볍게~(식물성 기름에 구워도 여전히 ZERO!)</p>
+                            </div>    
+                            <div class="text-box">
+                                <p class="refe bold">3. 가볍고 든든하게</p>
+                                <p class="refe gray">1일 영양성분 기준치 식이섬유 약 20% 충족(100g 당 식이섬유 약 5g 함유)</p>
+                            </div>
+                            <div class="text-box">    
+                                <p class="refe bold">4. 식물성 고단백질</p>
+                                <p class="refe gray">1일 영양성분 기준치 단백질 약 20% 충족(100g 당 단백질 약 11g 함유)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -64,23 +78,39 @@
                         <a href="#price">영양 정보</a>
                     </div>
                     <div class="post-box">
-                        <div class="post-box1">
-                            
-                             
+                        <div class="post-box1 line">
+                            <div class="text-box">
+                                <p class="gold bold">[소스]</p>
+                                <p class="refe bold">· 전자레인지</p>
+                                <p class="refe gray">1개를 1000W 기준 약 2~30초간 가열해주세요.</p>
+                                <p class="refe bold">· 중탕</p>
+                                <p class="refe gray">약 1~2분간 가열해주세요.</p>
+                                <p class="refe gray">(소스의 냉동 상태 및 조리의 기구에 따라 조리 시간은 다를 수 있습니다.)</p>
+                            </div>
+                            <div class="text-box">
+                                <p class="gold bold">[베지 함박 매쉬드 포테이토]</p>
+                                <p class="refe bold">· 에어프라이어</p>
+                                <p class="refe gray">1개를 180 ºC에서 약 10분간 조리</p>
+                                <p class="refe gray">(제품이 차가운 경우 약 1분씩 더 조리해 드세요.)</p>
+                                <p class="refe bold">· 전자레인지</p>
+                                <p class="refe gray">1개를 700W 기준 약 2분, 1000W 기준 약 1분 30초 조리</p>
+                                <p class="refe gray">2개를 700W 기준 약 3분, 1000W 기준 약 2분 20초 조리</p>
+                                <p class="refe gray">(제품이 차가운 경우 약 10초씩 더 조리하여 드세요.)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!--//////////////////////////////////////////-->
                 <div>  
                     <div class="post-menu">
-                        <a href="#comp">제품소개</a>
+                        <a href="#comp">제품 소개</a>
                         <a href="#intro">조리법</a>
                         <a id="price" href="#price">영양 정보</a>
                     </div>
                     <div class="post-box">
                         <div class="post-box1">
-                            
-                             
+                            <img class="nutrition" src="../static/img/kit1-nutrition.PNG" />
+                            <img class="table" src="../static/img/kit1-table.PNG" />
                         </div>
                     </div>
                 </div>
@@ -90,16 +120,13 @@
         </div>
         
     </div>                
-    
-     
-
-
-
-        
-
-    
-    </div>
 </div>
+
+
+<script>
+    var loaction = document.querySelector("comp").offsetTop;
+    window.scrollTo({top:loaction, behavior:'smooth'});
+</script>
 
 
 {% endblock content %}  
