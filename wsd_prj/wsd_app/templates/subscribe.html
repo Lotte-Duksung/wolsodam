@@ -31,8 +31,10 @@
                     <img id="ques" src="../static/img/ques1.png" />
                     <div>
                         <p id="ques-white">나는 평소 고기보다 채식 위주의 식사를 즐긴다 🥗</p>
+
                         <div class="yesorno"><button class="sel-btn" id="vegetable" onclick="printName('v');" value="V"><img id="yes-btn1" onclick="changeImage('yes')" src="{% static 'img/yes-red.png'%}"></button>                        </div>
                         <div class="yesorno"><button class="sel-btn" id="meat" onclick="printName('m');" value="M"><img id="no-btn1" onclick="changeImage('no')" src="{% static 'img/no-red.png'%}"></button>                        </div>
+
                     </div>
                 </div>
                 <div class="ques-box">
@@ -61,14 +63,39 @@
                 </div>
             </div>
         </div>
-        <div id='result'><span id='result1'></span><span id='result2'></span><span id='result3'></span><span id='result4'></span></div>
+        
         <div class="sub-bottom">
-            <div class="next"><a href="{% url 'mbti' %}">결과보기</a></div>
+            <div class="next"><a href="#" onclick="showhide();">결과보기</a></div>
+        </div>
+        <div id="mbtiboxl" style="display:block;">
+            <div class="result-box">
+                <div id='result'>
+                    <hr id="mbti-mini-line"></hr>
+                    <p id="mbti-mini-text">당신의 입맛은</p>
+                    <span id='result1'></span><span id='result2'></span><span id='result3'></span><span id='result4'></span><span id='result5'>형</span>
+                </div>
+            </div>
+            <div class="mbti">
+                <div class="mbti-mini">
+                    <div id = "mbti-ex">M : Meat / V : Vegetable</div><div id = "mbti-ex">A : Adult / C : Children</div>
+                </div>
+                <div class="mbti-mini">
+                    <div id = "mbti-ex">H : Hot / S : Sweet</div><div id = "mbti-ex">A: Allergy / N : Non-Allergy</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <script type=text/javascript>
+
+    function showhide(mbtiboxl){
+        var mbtir = document.getElementById(mbtiboxl);
+        if(mbtir.style.display=="block"){
+            mbtir.style.display="none";
+        }else{mbtir.style.display = "block";}
+    }
+
     function printName(e)  {
         var gubun = e;
         
