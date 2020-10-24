@@ -172,7 +172,7 @@ li a:hover{
 
 
 
-/*구독*/
+/*구독*/ 
 .sub-page{
     margin:0 auto;
     padding-bottom: 210px;
@@ -237,9 +237,15 @@ li a:hover{
     border-radius: 30px;
     background-color: #DA291C;
     color:#FFFFFF;
-    line-height: 59px;
+    line-height: 0px;
     text-align: center;
+    border:0px;
+    margin-top: 11px;
+    margin-bottom: 11px;
 }
+
+.yesorno
+
 /*mbti 결과창 페이지*/
 .mbti-box{
     background: #DAB99C;
@@ -333,6 +339,7 @@ li a:hover{
     box-shadow: 0px 5px #8F9191;
     color:#8F9191;
     text-decoration-line: none;
+    padding-top: 40px;
 }
 
 .post-menu #comp{
@@ -357,7 +364,7 @@ li a:hover{
     box-shadow: 0px 5px 10px #00000040;
     border-radius: 15px;
     margin-top: 40px;
-    margin-bottom: 200px;
+    margin-bottom: 154px;
 }
 
 .post-box1{
@@ -843,11 +850,17 @@ input[id="cb6"] {
 }
 
 .product-item-detail{
-    margin:80px 40px 80px 40px;
+    margin:80px 70px 80px 70px;
     display:inline-block;
     text-align: center;
 }
-
+#product-item-img{
+    width: 200px;
+    height: 200px;
+    background-color: #F8F8F8;
+    margin-left: 27px;
+    margin-right: 27px;
+}
 /*REVIEW PAGE*/
 .review-box{
     margin:0 auto;
@@ -951,3 +964,5 @@ input[id="cb6"] {
     width: 260px;
     height: 108px;
 }
+
+
