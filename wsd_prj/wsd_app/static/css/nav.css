@@ -243,6 +243,9 @@ li a:hover{
     margin-top: 11px;
     margin-bottom: 11px;
 }
+
+.yesorno
+
 /*mbti 결과창 페이지*/
 .mbti-box{
     background: #DAB99C;
@@ -847,11 +850,17 @@ input[id="cb6"] {
 }
 
 .product-item-detail{
-    margin:80px 40px 80px 40px;
+    margin:80px 70px 80px 70px;
     display:inline-block;
     text-align: center;
 }
-
+#product-item-img{
+    width: 200px;
+    height: 200px;
+    background-color: #F8F8F8;
+    margin-left: 27px;
+    margin-right: 27px;
+}
 /*REVIEW PAGE*/
 .review-box{
     margin:0 auto;

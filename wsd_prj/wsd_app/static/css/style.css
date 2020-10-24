@@ -132,7 +132,7 @@ p { font-size: 23px; }
 .hover-btn {
     background-color: #8F9191;
     padding: 18px 88px;
-    width: 260px; height: 70;
+    width: 260px; height: 70px;
 }
 .hover-btn:hover {
     background-color: #DA291C;
@@ -147,21 +147,22 @@ p { font-size: 23px; }
 }
 
 .best-review {
-    padding : 8px auto;
-    border-bottom: 2px solid #DA291C;
+    padding : 8px 54px;
+    border-bottom: 3px solid #DA291C;
 }
 
-#review { 
-    width: 395px; height: 374px;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 15px;
-    margin-bottom: 20px;
+.review-awards {
+    width: 153px; height: 228px;
+    margin: 67px auto 47px; 
+}
+
+.review-box {
+    width : 395px;
 }
 
 .review {
     display: flex;
     justify-content: center;
-    margin-top: 127px;
 }
 .review-page{
     margin: 20px auto;
