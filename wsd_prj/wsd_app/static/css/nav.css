@@ -238,9 +238,6 @@ li a:hover{
     width: auto;
 }
 
-<<<<<<< HEAD
-/*구독 페이지 2 --> 구독페이지4로 변경*/
-=======
 .yesorno
 
 .mbti-box{
@@ -284,7 +281,6 @@ li a:hover{
     line-height: 48px;
     padding-left: 30px;
 }
->>>>>>> 8ef3cdd08e69ebd9c02eaf0b571981c26049325e
 
 .sub-page4{
     margin:91px 140px;
@@ -953,8 +949,10 @@ input[id="cb6"] {
 /*mbti result css*/
 
 .result-box{
+    max-width: 80%;
+    width : 55%;
     background: #DAB99C;
-    margin:238px 416px 0px 416px;
+    margin:238px 0px 0px 416px;
 }
 #result{
     padding: 49px 650px 30px 49px;
