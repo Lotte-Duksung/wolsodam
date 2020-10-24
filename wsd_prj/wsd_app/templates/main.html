@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 </head>
 <body>
-<div class="main-img"> <!--메인 이미지&구독버튼-->
+<div class="main-img"> 
     <div class="main-img-text">
         <a class="button subscribe-btn" href="{% url 'subscribe' %}">구독하기</a>
     </div>
@@ -40,7 +40,7 @@
                 </div>
                 <img id="servicename" src="../static/img/wolsodam_logo.png" />
             </div>
-        </div><!-- END 서비스 네임 box -->
+        </div>
         
         <div class="box2">
             <p class="sub-title">이 달의 키트</p>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-        </div><!-- END 이 달의 키트 box -->
+        </div>
 
         <div class="box3">
             <div class="item">
@@ -69,38 +69,38 @@
                 </div>
                 <img id="delivery" src="../static/img/calendar.jpg" />
             </div>
-        </div><!-- END 배송 box -->
+        </div>
 
         <div class="btn-box">
             <a class="button hover-btn" href="{% url 'subscribe' %}">구독하기</a>
-        </div><!-- END 버튼 box -->
+        </div>
 
-    </div><!-- END main-contents -->
-</div><!-- END main-content-box / 회색 배경 끝-->
+    </div>
+</div>
 
 <div class="main-review">
     <span class="sub-title best-review">BEST 후기</span>
+    <a href="{% url 'review' %}">
     <div class="review">
         <div class="review-box">
-            <img id="review" src="../static/img/lotte_logo.png" />
-            <p class="bold gray">[비건KIT] 제품명</p>
+            <img class="review-awards" src="../static/img/1st.png" />
+            <p class="bold gold">[비건KIT] 제로베지까스</p>
             <p class="review-text refe gray line-small">비건은 맛이 덜할 줄 알았는데 맛있네요! 특히 베지 까스 아주 맛있습니다. 재구매 의향 있어요ㅎㅎ</p>
         </div>
 
         <div class="review-box">
-            <img id="review" src="../static/img/lotte_logo.png" />
-            <p class="bold gray">[비건KIT] 제품명</p>
+            <img class="review-awards" src="../static/img/2nd.png" />
+            <p class="bold gold">[비건KIT] 제로베지함박</p>
             <p class="review-text refe gray line-small">앞으로 동물착취를 하지 않는 비건 마요네즈를 먹으려구요. 이번 기회에 새로 알게됐네요!</p>
         </div>
 
         <div class="review-box">
-            <img id="review" src="../static/img/lotte_logo.png" />
-            <p class="bold gray">[KIT] 제품명</p>
+            <img class="review-awards" src="../static/img/3rd.png" />
+            <p class="bold gold">[비건KIT] 제로베지너겟</p>
             <p class="review-text refe gray line-small">추천제품에 나뚜루 아이스크림 뜨길래 주문해서 먹어봤는데 캐슈 바닐라 진짜 맛있습니다. 여러분 도전해보세요!</p>
         </div>
-
-    </div><!-- END item -->
-</div><!--END main-review-->
+    </div></a>
+</div>
 
 {% endblock content %}  
 </body>

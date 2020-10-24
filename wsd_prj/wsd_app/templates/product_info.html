@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
 </head>
 <body>
-<div>
-    <div class="product-info"> <!--회색박스-->
+
+    <div class="product-info">
         <div class="info-header">
             <img class="product-img" src="../static/img/began-kit1.jpg" />
             <div>
@@ -42,7 +42,6 @@
 
     <div class="sub-page2 product-categori">
         <div class = " product-wrapper">
-            <!--//////////////////////////////////////////-->
                 <div>
                     <div class="post-menu">
                         <a id="comp" href="#comp">제품 소개</a>
@@ -70,7 +69,7 @@
                         </div>
                     </div>
                 </div>
-                <!--//////////////////////////////////////////-->
+
                 <div>  
                     <div class="post-menu">
                         <a href="#comp">제품 소개</a>
@@ -100,7 +99,6 @@
                         </div>
                     </div>
                 </div>
-                <!--//////////////////////////////////////////-->
                 <div>  
                     <div class="post-menu">
                         <a href="#comp">제품 소개</a>
@@ -114,21 +112,22 @@
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
         <div class="buy-btn-box">
             <a class="button buy-btn-big" target="_blank" href="https://s.lotteon.com/sfqQIui7w">사러가기</a>
-        </div>
-        
+        </div>  
     </div>                
-</div>
 
-
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 <script>
-    var loaction = document.querySelector("comp").offsetTop;
-    window.scrollTo({top:loaction, behavior:'smooth'});
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 400);
+    });
 </script>
-
-
 {% endblock content %}  
 </body>
 </html>

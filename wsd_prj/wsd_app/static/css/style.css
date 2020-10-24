@@ -1,65 +1,48 @@
 @charset "UTF-8";
-/*********공통*********/
+
 
 html {
     font-size: 100%;
-    /*스크롤 영역 따로 빼기*/
     overflow-x: hidden;
     margin-right: calc(-1 * (100vw - 100%));
 }
 
-/*감사합니다*/
 body {
     font-family: 'Noto Sans KR','Noto Sans', sans-serif;
     color : black;
 }
 * { margin: 0;}
 
-/* 앵커 밑줄 삭제 */
 a {
     text-decoration: none;
 }
 
-
-/*빨간색배경+흰글씨 구성 버튼 기본 값*/
 .button {
     border-radius: 40px;
     background-color: #DA291C;
     text-align: center;
     font-size:23px;
     color: white;
-/*
-    width, height, padding값만 다르게 주기
-*/
 }
 
-/*====== FONT LIST =======*/
-
-/*font-size, weight*/
 .title { font-size: 47px; font-weight: bold;}
 .sub-title { font-size: 33px; font-weight: bold; }
 p { font-size: 23px; }
 .refe { font-size: 19px; }
 
-/*color*/
 .red { color: #DA291C; }
 .lightgray { color: #8F9191; }
 .gray { color: #54585A; }
 .gold { color : #AA7357; }
 
-/*line-height*/
 .line { line-height: 55px; }
 .line-middle { line-height: 45px;}
 .line-small { line-height: 35px;}
 
-/*bold*/
 .bold { font-weight: bold;}
 
 
 
-/******************** MAIN.HTML **************************/
-
-/**1.구독하기 이미지, 버튼**/
 .main-img { 
     min-height: 750px;
     background-image: url("../img/main_img.jpg");
@@ -69,11 +52,10 @@ p { font-size: 23px; }
     position: relative;
 }
 
-.main-img-text { /*이미지 속 구독하기 text*/
+.main-img-text { 
     position: absolute;
     top: 80%;
 	left: 20%;
-	/*transform: translateX(-50%); /*left 50을 주면 정확히 가운데 위치가 아니기 때문에 X값으로 따로 값 부여*/
 }
 
 .subscribe-btn {
@@ -82,9 +64,7 @@ p { font-size: 23px; }
     height: 70px;
 }
 
-/**2.서비스소개박스**/
 .main-contents-box {
-    /*회색배경*/
     background-color: #F8F8F8;
 }
 
@@ -95,7 +75,6 @@ p { font-size: 23px; }
 }
 
 
-/*각 설명박스 별 상하단 여백*/
 .box1 { padding-top: 182px; }
 .box2 { padding-top: 148px; }
 .box3 { padding-top: 152px; }
@@ -120,7 +99,6 @@ p { font-size: 23px; }
 }
 
 .text-field-R {
-    /*이미지 중앙에 정렬*/
     align-self: center;
     padding-left: 73px;
 }
@@ -145,7 +123,6 @@ p { font-size: 23px; }
 }
 
 
-
 .btn-box {
     text-align: center;
     padding-top: 210px;
@@ -155,14 +132,13 @@ p { font-size: 23px; }
 .hover-btn {
     background-color: #8F9191;
     padding: 18px 88px;
-    width: 260px; height: 70;
+    width: 260px; height: 70px;
 }
 .hover-btn:hover {
     background-color: #DA291C;
 }
 
 
-/*3.BEST 후기*/
 .main-review {
     max-width: 1450px; 
     width: 80%;
@@ -171,22 +147,22 @@ p { font-size: 23px; }
 }
 
 .best-review {
-    padding : 8px auto;
-    border-bottom: 2px solid #DA291C;
+    padding : 8px 54px;
+    border-bottom: 3px solid #DA291C;
 }
 
-/*이미지 임시 값*/
-#review { 
-    width: 395px; height: 374px;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 15px;
-    margin-bottom: 20px;
+.review-awards {
+    width: 153px; height: 228px;
+    margin: 67px auto 47px; 
+}
+
+.review-box {
+    width : 395px;
 }
 
 .review {
     display: flex;
     justify-content: center;
-    margin-top: 127px;
 }
 .review-page{
     margin: 20px auto;
@@ -226,8 +202,6 @@ td {
     text-align: left;
 }
 
-
-/**product info**/
 
 .product-info{
     background-color: #F8F8F8;
@@ -308,16 +282,6 @@ td {
     width: 698px; height: 646px;
     margin: 0 auto;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .qna-page {
