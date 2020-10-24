@@ -28,7 +28,7 @@
                 </div>
                 <div class="ques-box">
                     <img id="ques" src="../static/img/ques1.png" />
-                    <form name="exf1">
+                    <div>
                         <p id="ques-white">나는 평소 고기보다 채식 위주의 식사를 즐긴다 🥗</p>
 
                         <div class="yesorno"><button id="vegetable" onclick="printName('v');" value="V"><p id="ques-white">네!</p></button></div>
@@ -75,7 +75,19 @@
 </div>
 
 <script type=text/javascript>
+     function printName(e)  {
+        var gubun = e;
+        
+        let name1;
 
+        if (gubun=="v"){
+            name1 = document.getElementById("vegetable").value;
+        }else if(gubun=="m"){
+            name1 = document.getElementById("meat").value;
+        }
+
+        document.getElementById('result1').innerText = name1;
+    }
     function printName2(e)  {
         var gubun = e;
         let name2;
@@ -116,9 +128,7 @@
     }
 
 </script>
-<script>
-    
-</script>
+
 {% endblock content %}  
 </body>
 </html>
