@@ -17,7 +17,7 @@
 <div class="text-center">
     <p id='ll'>로그인</p>
         <div class = "login-entry">
-            <form method="POST" action="{%url 'login' %}">
+            <form method="POST" action="{% url 'login' %}">
                 {% csrf_token %}
                 <div class = "form-group">
                     <input id="inputC" name="username" type="text" value="" placeholder="아이디 입력">
