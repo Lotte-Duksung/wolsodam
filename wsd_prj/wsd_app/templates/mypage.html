@@ -1,51 +1,107 @@
 {% extends 'base.html' %}
-
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}
+    <link rel='stylesheet' href='{% static "css/mypage.css" %}'/>
+    <title>마이페이지</title>
+    {% endblock head %}
+</head>
+<body>
 {% block content %}
 <br>
 <br>
-<div class='text-center'>
-    {% if request.user.is_authenticated %}
-<div class="mypage-contents-box">
-    <div class="mypage-contents">
-        
-        <div class="box">
-            <p class="sub-title-name">{{user.last_name}}{{user.first_name}}님</h2>
-            <div class="item">
-                <div class="text-field">
-                    <span class="input-username">아이디</span>
-                    <span class="username">{{user.username}}</span>
-                    <span class="input-phone">연락처</span>
-                    <span class="phone">{{user.profile.phone}}</span>
-                    <br>
-                    <span class="input-email">이메일</span>
-                    <span class="email">{{user.email}}</span>
-                    <span class="input-birth">생년월일</span>
-                    <span class="birth">{{user.profile.birth_date|date:'Y.m.d'}}</span>
-                </div>
+<div class='mypage_body'>
+    <div id='card1'>
+        <div id='inner1'>
+            <div id="img_border">
+                <img src='{% static "img/wolsodam_2.png" %}'>
             </div>
-        </div><!-- END 프로필 box -->
-
-        <!-- 배송지-->
-        <div class="box">
-            <p class="sub-title-name">배송지</h2>
-            <div class="item">
-                <div class="text-field">
-                    <span class="input-username">받는 이</span>
-                    <span class="username">{{user.last_name}}{{user.first_name}}</span>
-                    <br>
-                    <span class="input-phone">연락처</span>
-                    <span class="phone">{{user.profile.phone}}</span>
-                    <br>
-                    <span class="input-addresscode">우편번호</span>
-                    <span class="addresscode">{{user.profile.addresscode}}</span>
-                    <br>
-                    <span class="input-address">주소지</span>
-                    <span class="address">{{user.profile.address}}</span>
+            <div id="next_img">
+                <div id="side_right">
+                    {% if request.user.is_authenticated %}
+                    <span class="sub-title-name">{{user.last_name}}{{user.first_name}}</span>님
+                    <button id="modify_button" type="button">수정</button>
                 </div>
+                <table>
+                    <tr>
+                        <th>아이디</th><td><span class="username">{{user.username}}</span></td>
+                        <th>연락처</th><td><span class="phone">{{user.profile.phone}}</span></td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th><td><span class="email">{{user.email}}</span></td>
+                        <th>생년월일</th><td><span class="birth">{{user.profile.birth_date|date:'Y.m.d'}}</span></td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
-</div>
-        {% endif%}
+
+    <div id="card2">
+        <div id="inner2">
+            <div id="inner2_i">
+                <h2>배송지</h2>
+                <hr>
+                <table>
+                    <tr><th>받는 이</th><td>{{user.name}}</td></tr>
+                    <tr><th>연락처</th><td><span class="phone">{{user.profile.phone}}</span></td></tr>
+                    <tr><th>우편번호</th><td><span class="addresscode">{{user.profile.addresscode}}</span></td></tr>
+                    <tr><th>주소지</th><td><span class="address">{{user.profile.address}}</span></td></tr>
+                </table>
+                <button id="modify_button" type="button">수정</button>
+            </div>
+            <div id="inner2_i">
+                <h2>구독 관리</h2>
+                <hr>
+                <table>
+                    <tr><th>구독여부</th><td>구독중</td></tr>
+                    <tr><th>키트 개수</th><td>1개</span></td></tr>
+                    <tr><th>결제 금액</th><td>0,000원</span></td></tr>
+                    <tr><th>결제 수단</th><td>신용카드</td></tr>
+                </table>
+                <button id="modify_button" type="button">수정</button>
+            </div>
+        </div>
+
+        <div id="inner3">
+            <h2>주문 내역</h2>
+            <hr>
+            <div id="img_border">
+                <img src='{% static "img/wolsodam_2.png" %}'>
+            </div>
+            <div id="next_img">
+                <div id="side_right">
+                    <span>주문한 키트이름 넣어주세요</span>
+                    <table>
+                        <tr><th>주문번호</th><td>20201010354685</td></tr>
+                        <tr><th>주문일시</th><td>2020/10/10</td></tr>
+                        <tr><th>주문상태</th><td>배송준비중</td></tr>
+                    </table>
+                </div>
+                <div id="buttonIshere">
+                    <button class="here_button" type="button" style="background-color:#DAB99C">배송조회</button><br>
+                    <button class="here_button" type="button" style="background-color:#DA291C">상세보기</button>
+                </div>
+           </div>  
+        </div>
+
+        <div id="inner4">
+            <h2>후기</h2>
+            <hr>
+            <table>
+            <tr><td>2020/10/10</td><th>키트 구성이 너무 좋아요!</th><th>비건 KIT!</th></tr>
+            <tr><td>2020/10/10</td><th>맛있게 먹었어요!</th><th>제로미트 베지 까스</th></tr>
+            <tr><td>2020/10/10</td><th>만족만족</th><th>파스퇴르 쾌변 요구르트</th></tr>
+            </table>
+        </div>
+
+    </div>
+
+    {% endif%}
 </div>
 {% endblock content %}
+</body>
+</html>

@@ -13,7 +13,7 @@
 <div class="sub-page">
     <div class = "sub-wrapper">
         <div class = "sub-top-menu-wrapper">
-            <img id="stage" src="../static/img/stage1.png" />
+            <img id="stage" src="{% static 'img/stage1.png' %}" />
         </div>
         <div class="sub-title">
             입맛 유형 테스트
@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="ques-box">
-                    <img id="ques" src="../static/img/ques1.png" />
+                    <img id="ques" src="{% static 'img/ques1.png' %}" />
                     <div>
                         <p id="ques-white">나는 평소 고기보다 채식 위주의 식사를 즐긴다 🥗</p>
 
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="ques-box">
-                    <img id="ques" src="../static/img/ques2.png" />
+                    <img id="ques" src="{% static 'img/ques2.png' %}" />
                     <div>
                         <p id="ques-white">나는 매운 맛의 화끈함을 즐긴다 🔥</p>
                         <div class="yesorno"><button class="sel-btn" id="hot" onclick="printName2('h');" value="H"><img id="yes-btn2" onclick="changeImage('yes2')" class="btn-img" src="{% static 'img/yes-red.png'%}"></button></div>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="ques-box">
-                    <img id="ques" src="../static/img/ques3.png" />
+                    <img id="ques" src="{% static 'img/ques3.png' %}" />
                     <div>
                         <p id="ques-white">나는 주위 사람에게 아기 입맛이라는 이야기를 듣는다 👶</p>
                         <div class="yesorno"><button class="sel-btn" id="children" onclick="printName3('c');" value="C"><img id="yes-btn3" onclick="changeImage('yes3')" class="btn-img" src="{% static 'img/yes-red.png'%}"></button></div>
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="ques-box">
-                    <img id="ques" src="../static/img/ques4.png" />
+                    <img id="ques" src="{% static 'img/ques4.png' %}" />
                     <div>
                         <p id="ques-white">나는 어떤 음식이든 몸이 잘 받아들인다 👍</p>
                         <div class="yesorno"><button class="sel-btn" id="nonallergy" onclick="printName4('n');" value="N"><img id="yes-btn4" onclick="changeImage('yes4')" class="btn-img" src="{% static 'img/yes-red.png'%}"></button></div>

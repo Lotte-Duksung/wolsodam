@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+}
+
+body {
+    font-family: 'Noto Sans KR','Noto Sans', sans-serif;
+    color : black;
+}
+* { margin: 0;}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    border-radius: 40px;
+    background-color: #DA291C;
+    text-align: center;
+    font-size:23px;
+    color: white;
+}
+
+.title { font-size: 47px; font-weight: bold;}
+.sub-title { font-size: 33px; font-weight: bold; }
+p { font-size: 23px; }
+.refe { font-size: 19px; }
+
+.red { color: #DA291C; }
+.lightgray { color: #8F9191; }
+.gray { color: #54585A; }
+.gold { color : #AA7357; }
+
+.line { line-height: 55px; }
+.line-middle { line-height: 45px;}
+.line-small { line-height: 35px;}
+
+.bold { font-weight: bold;}
+
+
+
+.main-img { 
+    min-height: 750px;
+    background-image: url("../img/main_img.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main-img-text { 
+    position: absolute;
+    top: 80%;
+	left: 20%;
+}
+
+.subscribe-btn {
+    padding: 18px 88px;
+    width: 260px;
+    height: 70px;
+}
+
+.main-contents-box {
+    background-color: #F8F8F8;
+}
+
+.main-contents {
+    max-width: 1450px; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.box1 { padding-top: 182px; }
+.box2 { padding-top: 148px; }
+.box3 { padding-top: 152px; }
+
+.box1-title { padding-bottom: 94px; }
+.sub-title { 
+    padding-bottom: 34px; 
+    margin: 0;
+    text-align: left;}
+
+.no-height {
+    padding : 0px; margin: 0;
+}
+
+.item {
+    display: flex;
+}
+
+.text-field-L {
+    align-self: center;
+    margin-right: 181px;
+}
+
+.text-field-R {
+    align-self: center;
+    padding-left: 73px;
+}
+
+
+
+#servicename {
+    width: 456px; height:137px;
+    margin : auto 0;
+}
+#monthkit {
+    width: 674px; height: 506px;
+    margin : auto 0;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 8px;
+}
+
+#delivery {
+    width: 674px; height: 536px;
+    box-shadow: 0px 3px 6px #00000029;
+    margin: auto 0;
+}
+
+
+.btn-box {
+    text-align: center;
+    padding-top: 210px;
+    padding-bottom: 223px;
+}
+
+.hover-btn {
+    background-color: #8F9191;
+    padding: 18px 88px;
+    width: 260px; height: 70px;
+}
+.hover-btn:hover {
+    background-color: #DA291C;
+}
+
+
+.main-review {
+    max-width: 1450px; 
+    width: 80%;
+    margin: 190px auto 233px;
+    text-align: center;
+}
+
+.best-review {
+    padding : 8px 54px;
+    border-bottom: 3px solid #DA291C;
+}
+
+.review-awards {
+    width: 153px; height: 228px;
+    margin: 67px auto 47px; 
+}
+
+.review-box {
+    width : 395px;
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+}
+.review-page{
+    margin: 20px auto;
+    text-align: center;
+}
+.review-div {
+    max-width: 100%;
+    width: 90%;
+    text-align: center;
+    margin: 80px 0 100px 10%;
+}
+.review-table {
+    border-collapse: collapse;
+    width: 85%;
+    text-align: left;
+    font-size: 20px;
+
+}
+thead {
+    border-bottom: 3px solid #AA7357;
+    font-size: 24px;
+}
+th {
+    padding: 2.5rem;
+}
+td {
+    background-color: #F8F8F8;
+    border-bottom: 1rem solid white;
+    padding: 1.5rem;
+}
+.tbnum{ 
+    text-align: center;
+}
+
+.review-text {
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+.product-info{
+    background-color: #F8F8F8;
+    padding-top: 105px;
+    padding-bottom: 84px;
+}
+
+.product-wrapper {
+    max-width: 1356px; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info-header {
+    display: flex;
+    max-width: 1356px; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.product-img {
+    width: 366px; height: 366px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 15px;
+    margin-right: 122px;
+}
+
+.info-area {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 36px;
+    line-height: 70px;
+}
+
+.info-list {
+    max-width: 190px; width: 100%
+}
+
+.pro-list-ex {
+    width: 460px;
+}
+
+.buy-btn {
+    padding: 13px 85px;
+    width: 252px; height: 58px;
+}
+
+
+.buy-btn-box {
+    text-align: center;
+    margin : 193px auto 138px;
+}
+
+.buy-btn-big {
+    padding: 13px 225px;
+    width: 536px; height: 60px;
+    margin: 0 auto;
+}
+
+.product-categori {
+    background-color: white;
+    margin-top: 84px;
+    padding-top: 90px;
+}
+
+
+.text-box {
+    margin-bottom: 53px;
+}
+
+.nutrition {
+    display: block;
+    width: 698px; height: 240px; 
+    margin: 138px auto 95px;
+}
+.table {
+    display: block;
+    width: 698px; height: 646px;
+    margin: 0 auto;
+}
+
+
+.qna-page {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.qna-box {
+    max-width: 100%;
+    width: 70%;
+    margin: 80px 15% 80px 15%;
+}
+.question {
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+    color : black;
+    padding : 2rem 0 2.5rem 2rem;
+    border-bottom : 2px solid #798083;
+}
+
+.answer {
+    font-size :18px;
+    font-weight: normal;
+    color : #54585A;
+    text-align : left;
+    padding-top: 2rem;
+}
