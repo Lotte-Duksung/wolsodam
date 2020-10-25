@@ -102,12 +102,14 @@ body {
     color : #8F9191;
 }
 
+
+
 #navbar{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 10px 8%;
-    height : 126px;
+    height : 126px !important;
 }
 
 #logo_img{
@@ -123,6 +125,11 @@ body {
     padding: 0px 37px;
     font-weight: bold;
     font-size: 23px;
+}
+
+#navbar ul {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
 }
 
 
@@ -150,7 +157,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 li a{

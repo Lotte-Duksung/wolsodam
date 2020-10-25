@@ -16,57 +16,57 @@
 <br>
 <br>
 <div class="text-center">
-    <p style="font-size:33px; font-weight:bold">회원가입</p>
+    <p class="signup-title">회원가입</p>
         <div class = "signup-entry">
             <form method="POST" action="{% url 'signup' %}">
                 {% csrf_token %}
                 <div class="form-group">
-                    <p id="t">이름</p> <br>
+                    <p id="t">이름</p>
                     <input name="first_name" type="first_name" required="true" placeholder="이름 입력">
                 </div>
                 <br>
                 <div class="form-group">
-                    <p id="t">성</p> <br>
+                    <p id="t">성</p>
                     <input name="last_name" type="last_name" required="true" placeholder="성 입력">
                 </div>
                 <br>
                 <div class = "form-group">
-                    <p id="t">아이디</p> <br>
+                    <p id="t">아이디</p>
                     <input name="username" type="text" required="true" placeholder="아이디 입력">
                 </div>
                 <br>
                 <div class="form-group">
-                    <p id="t">비밀번호</p> <br>
+                    <p id="t">비밀번호</p>
                     <input name="password1" type="password" required="true" placeholder="8~15자리 영문+숫자 조합" pattern="^(?=.*[a-z])(?=.*[0-9]).{8,15}$">
                 </div>
                 <br>
                 <div class="form-group">
-                    <p id="t">비밀번호 확인</p> <br>
+                    <p id="t">비밀번호 확인</p>
                     <input name="password2" type="password" required="true" placeholder="8~15자리 영문+숫자 조합" pattern="^(?=.*[a-z])(?=.*[0-9]).{8,15}$">
                 </div>
                 <br>
                 <div class="form-group">
-                    <p id="t">우편번호</p> <br>
+                    <p id="t">우편번호</p>
                     <input name="addresscode" type="number" required="true" placeholder="우편번호 입력">
                 </div>
                 <br>
                 <div class="form-group">
-                    <p id="t">주소지</p> <br>
+                    <p id="t">주소지</p>
                     <input name="address" type="text" required="true" placeholder="주소지 입력">
                 </div>
                 <br>
                 <div class="form-group">
-                    <p id="t">이메일</p> <br>
+                    <p id="t">이메일</p>
                     <input name="email" type="email" required="true" placeholder="이메일 입력">
                 </div>
                 <br>
                 <div class="form-group">
-                   <p id="t">전화번호</p> <br>
+                   <p id="t">전화번호</p>
                     <input name="phone" type="text" required="true" placeholder="000-0000-0000">
                 </div>
                 <br>
                 <div class="form-group">
-                    <p id="t">생일</p> <br>
+                    <p id="t">생일</p>
                     <input name="birth_date" type="date">
                 </div>
                 <br>
