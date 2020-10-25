@@ -57,8 +57,7 @@ def signup(requests):
                 requests.POST['username'],   # 입력 받은 유저이름
                 password = requests.POST['password1'],    # 입력 받은 패스워드
                 email = requests.POST['email'],
-                first_name = requests.POST['first_name'],
-                last_name = requests.POST['last_name']
+                first_name = requests.POST['first_name']
             )
             phone = requests.POST["phone"]  
             birth_date = requests.POST["birth_date"]
