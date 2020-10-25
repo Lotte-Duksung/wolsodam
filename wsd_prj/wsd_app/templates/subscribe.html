@@ -65,9 +65,9 @@
         </div>
         
         <div class="sub-bottom">
-            <div class="next"><a href="#" onclick="showhide();">결과보기</a></div>
+            <div class="next"><a onclick="showhide()">결과보기</a></div>
         </div>
-        <div id="mbtiboxl" style="display:block;">
+        <div id="mbtiboxl" style="display:none">
             <div class="result-box">
                 <div id='result'>
                     <hr id="mbti-mini-line"></hr>
@@ -83,17 +83,19 @@
                     <div id = "mbti-ex">H : Hot / S : Sweet</div><div id = "mbti-ex">A: Allergy / N : Non-Allergy</div>
                 </div>
             </div>
+            <div class="sub-bottom">
+                <div class="next"><a href="{% url 'subscribe2' %}">다음 단계로</a></div>
+            </div>
         </div>
     </div>
 </div>
 
 <script type=text/javascript>
 
-    function showhide(mbtiboxl){
-        var mbtir = document.getElementById(mbtiboxl);
-        if(mbtir.style.display=="block"){
-            mbtir.style.display="none";
-        }else{mbtir.style.display = "block";}
+    function showhide(){
+        if(document.getElementById("mbtiboxl").style=="display:none"){
+            document.getElementById("mbtiboxl").style="display:visible";
+        }else document.getElementById("mbtiboxl").style="display:visible";
     }
 
     function printName(e)  {

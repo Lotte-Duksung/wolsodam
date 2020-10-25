@@ -192,6 +192,7 @@ li a:hover{
     border-radius: 30px;
     background-color: #DA291C;
     margin:0px 692px;
+    cursor: pointer;
 }
 .next a{
     font-size:24px;
@@ -237,6 +238,7 @@ li a:hover{
     border: 0;
     background: none;
     width: auto;
+    cursor: pointer;
 }
 
 /*구독 페이지 2 --> 구독페이지4로 변경*/
@@ -908,11 +910,13 @@ input[id="cb6"] {
 /*mbti result css*/
 
 .result-box{
+    max-width: 80%;
+    width : 56.5%;
     background: #DAB99C;
-    margin:238px 416px 0px 416px;
+    margin:238px 0px 0px 416px;
 }
 #result{
-    padding: 49px 650px 30px 49px;
+    padding: 49px 660px 30px 49px;
 }
 #result1, #result2, #result3, #result4, #result5{
     text-align: left;
@@ -939,7 +943,7 @@ input[id="cb6"] {
 }
 
 .mbti{
-    margin:40px 416px 121px 416px;
+    margin:40px 416px 188px 416px;
     display: flex;
 }
 .mbti-mini{
