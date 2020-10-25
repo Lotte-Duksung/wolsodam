@@ -201,9 +201,11 @@ li a:hover{
     border-radius: 30px;
     background-color: #DA291C;
     margin:0px 692px;
+    cursor: pointer;
 }
 .next a{
     font-size:24px;
+    font-weight: bold;
     color: white;
     line-height: 60px; 
 }
@@ -245,51 +247,10 @@ li a:hover{
     border: 0;
     background: none;
     width: auto;
+    cursor: pointer;
 }
 
-.yesorno
-
-.mbti-box{
-    background: #DAB99C;
-    padding: 49px 665px 30px 49px;
-}
-#mbti-mini-line{
-    width: 59px;
-    height: 11px;
-    background-color: #AA7357;
-    border:0px;
-    margin:0px;
-}
-#mbti-mini-text{
-    font-size: 23px;
-    margin-bottom:0px;
-    margin-top: 5px;
-}
-#mbti-big{
-    text-align: left;
-    font-size:98px;
-    font-weight: bold;
-    letter-spacing: 1.96px;
-    color: #FFFFFF;
-    margin:0px;
-}
-.mbti{
-    margin:40px 416px 121px 416px;
-    display: flex;
-}
-.mbti-mini{
-    justify-content: center;
-}
-#mbti-ex{
-    width: 506px;
-    height: 48px;
-    background-color: #F8F8F8;
-    margin-right: 16px;
-    margin-bottom: 18px;
-    color:#54585A;
-    line-height: 48px;
-    padding-left: 30px;
-}
+/*구독 페이지 2 --> 구독페이지4로 변경*/
 
 .sub-page4{
     margin:91px 140px;
@@ -648,16 +609,10 @@ input[id="cb6"] {
 #img{
     width: 122px;
     height: 122px;    
-    border: 2px solid #AA7357;
-    border-radius: 8px;
+
     margin-top: 78px;
 }
 
-#inside-img{
-    width: 132px;
-    height: 68px;
-    margin-top: 27px;
-}
 
 .kit-info{
     margin-left: 22px;
@@ -958,16 +913,14 @@ input[id="cb6"] {
     height: 108px;
 }
 
-/*mbti result css*/
-
 .result-box{
     max-width: 80%;
-    width : 55%;
+    width : 56.5%;
     background: #DAB99C;
     margin:238px 0px 0px 416px;
 }
 #result{
-    padding: 49px 650px 30px 49px;
+    padding: 49px 640px 30px 49px;
 }
 #result1, #result2, #result3, #result4, #result5{
     text-align: left;
@@ -977,8 +930,6 @@ input[id="cb6"] {
     color: #FFFFFF;
     margin:0px;
 }
-
-/*mbti 결과창 페이지*/
 
 #mbti-mini-line{
     width: 59px;
@@ -994,7 +945,7 @@ input[id="cb6"] {
 }
 
 .mbti{
-    margin:40px 416px 121px 416px;
+    margin:40px 416px 188px 416px;
     display: flex;
 }
 .mbti-mini{
