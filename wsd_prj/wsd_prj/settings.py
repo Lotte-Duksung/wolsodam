@@ -25,7 +25,7 @@ SECRET_KEY = 'ze3a4f%@or@y_3ct0mzgia=++6bm-8tbi@rv^px+0k5r!-(eg#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,3 +125,4 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressdManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
+SITE_ID = 1
