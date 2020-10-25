@@ -641,15 +641,9 @@ input[id="cb6"] {
 #img{
     width: 122px;
     height: 122px;
-    border: 2px solid #AA7357;
-    border-radius: 8px;
     margin-top: 78px;
 }
-#inside-img{
-    width: 132px;
-    height: 68px;
-    margin-top: 27px;
-}
+
 .kit-info{
     margin-left: 22px;
     margin-top: 115px;
@@ -730,6 +724,7 @@ input[id="cb6"] {
     opacity: 1;
     font: normal normal normal 19px/65px Noto Sans KR;
     color: #8F9191;
+    padding-left: 30px;
 }
 .delivery-box2{
     justify-content: space-between;
