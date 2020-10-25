@@ -1,0 +1,1 @@
+wed: gunicorn wsd_prj.wsgi
