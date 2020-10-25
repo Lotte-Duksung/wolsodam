@@ -1,1 +1,1 @@
-web: gunicorn wolsodam.wsgi
+web: gunicorn wsd_prj.wsgi
