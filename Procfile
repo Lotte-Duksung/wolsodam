@@ -1,1 +1,1 @@
-wed: gunicorn wsd_prj.wsgi
+web: gunicorn wsd_prj.wsgi
