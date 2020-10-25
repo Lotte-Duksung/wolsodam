@@ -912,8 +912,6 @@ input[id="cb6"] {
     height: 108px;
 }
 
-/*mbti result css*/
-
 .result-box{
     max-width: 80%;
     width : 56.5%;
@@ -931,8 +929,6 @@ input[id="cb6"] {
     color: #FFFFFF;
     margin:0px;
 }
-
-/*mbti 결과창 페이지*/
 
 #mbti-mini-line{
     width: 59px;
