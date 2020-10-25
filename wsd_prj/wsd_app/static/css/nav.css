@@ -640,8 +640,16 @@ input[id="cb6"] {
 
 #img{
     width: 122px;
-    height: 122px;
+    height: 122px;    
+    border: 2px solid #AA7357;
+    border-radius: 8px;
     margin-top: 78px;
+}
+
+#inside-img{
+    width: 132px;
+    height: 68px;
+    margin-top: 27px;
 }
 
 .kit-info{
